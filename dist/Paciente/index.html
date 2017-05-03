@@ -12,6 +12,12 @@
     script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
     script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
     -->
+    <style>
+      .borde1{border: 1px #000 solid; text-align: center}            
+      .borde{border: 1px #000fff solid;}
+      .borde2{border: 1px #295ba7 solid; text-align: center}
+      .action{  float: right;}
+    </style>
   </head>
   <body class="sidebar-mini fixed">
     <div class="wrapper">
@@ -149,12 +155,20 @@
           <div class="col-md-12">
             <!--CODIGO MODIFICAR-->
               <div class="card">
-                <!--*********************************************CARD***************************-->
+                <!--*********************************************AQUÍ MODIFICAR CARD***************************-->
 
 
 
 
                 
+
+
+
+
+
+
+
+
                     <!--CONTAINER TITLE-->
                         <div class="container" id="MantenimientoPaciente">
                         <!--NOMBRE DE MANTENIMIENTO-->   
@@ -164,8 +178,21 @@
                                 <!--ACTIONS-->
                         <div class="container" id="actions">
                             <div class="row">
-                                <!--TO EXPORT-->
-                                <div class="col-sm-2 col-md-2 col-lg-2 action" id="toExport">
+                                <!--NEW PATIENT-->
+                                <div class="col-sm-6 col-md-6 col-lg-6">
+                                    <p>
+                                        <a class="btn btn-success" href="create.html">
+                                        <i class="glyphicon glyphicon-plus"></i> 
+                                            Nuevo Paciente
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                              <!--TO EXPORT-->
+                                <div class="col-sm-6 col-md-6 col-lg-6x" style="float: left;" id="toExport">
                                     <form action="" >
                                         <div class="btn-group" style="display:inline-block;">
                                             <button type="button" class="btn btn-primary col-sm-8 col-md-8 col-lg-8"><i class="glyphicon glyphicon-download-alt"></i> Exportar</button>
@@ -182,24 +209,15 @@
                                     </form>
                                 </div>
 
-                                <!--NEW PATIENT-->
-                                <div class="col-sm-3 col-md-2 col-lg-2 action">
-                                    <p>
-                                        <a class="btn btn-success" href="create.html">
-                                        <i class="glyphicon glyphicon-plus"></i> 
-                                            Nuevo Paciente
-                                        </a>
-                                    </p>
-                                </div>
-                            </div>
                         </div>
+                    
 
 
                         
                   <!--***************TABLE-->
                   <div class="card-body">
-                            <table class="table table-hover table-bordered" id="sampleTable">
-                              <thead>
+                            <table class="table table-hover table-bordered " id="sampleTable">
+                              <thead style="color:#ffffff;background:#0094ff;">
                                 <tr>
                                   <th>Name</th>
                                   <th>Position</th>
@@ -208,7 +226,7 @@
                                   <th>Start date</th>
                                   <th>Salary</th>
                                 </tr>
-                              </thead>
+                              </thead>crud 
                               <tbody>
                                 <tr>
                                   <td>Tiger Nixon</td>
@@ -688,6 +706,9 @@
 
       </div>
     </div>
+
+
+
     <!-- Javascripts-->
     <script src="../js/jquery-2.1.4.min.js"></script>
     <script src="../js/essential-plugins.js"></script>
@@ -697,6 +718,54 @@
     <!--TABLESCRIPT-->
     <script type="text/javascript" src="../js/plugins/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="../js/plugins/dataTables.bootstrap.min.js"></script>
-    <script type="text/javascript">$('#sampleTable').DataTable();</script>
+    <script type="text/javascript">
+    //$('#sampleTable').DataTable();
+
+                $(document).ready(function () 
+            {
+                $('#sampleTable').dataTable({
+
+                    language: {
+                        processing: "En curso...",
+                        search: "Buscar:",
+                        lengthMenu: "Visualizar _MENU_ registros",
+                        info: "_START_ de _END_ registros de un total de _TOTAL_ registros",
+                        infoEmpty: "0 registros encontrados",
+                        infoFiltered: "(_MAX_ registros filtrados en total)",
+                        infoPostFix: "",
+                        loadingRecords: "Cargando registros...",
+                        zeroRecords: "No hay registros",
+                        emptyTable: "Vacío",
+                        paginate: {
+                            first: "Primero",
+                            previous: "Previo  ",
+                            next: "  Siguiente",
+                            last: "Último"
+                        },
+                        aria: {
+                            sortAscending: ": Habilitado para ordenar la columna en orden ascendente",
+                            sortDescending: ": Habilitado para ordenar la columna en orden descendente"                }
+                    }
+                });
+
+                var id;
+                $("body").on("click", ".deleteItem", function (e) {
+                    id = $(this).data('id');
+
+                    var html = "¿Estás seguro de eliminar la marca de <b>" + $(this).data('content') + "</b>?";
+                    $("#body-delete").html(html);
+                });
+
+                $('#btnContinueDelete').click(function () {
+                    window.location = "/Marca/Delete/" + id;
+                });
+
+
+            });
+
+    
+    
+    
+    </script>
   </body>
 </html>
