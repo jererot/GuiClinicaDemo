@@ -70,7 +70,7 @@
             </li>
             <li class="treeview"><a href="#"><i class="fa fa-user"></i><span>Mant. Paciente</span><i class="fa fa-angle-right"></i></a>
               <ul class="treeview-menu">
-                <li><a href="Paciente/index.html"><i class="fa fa-user"></i>Paciente</a></li>
+                <li><a href="../Paciente/index.html"><i class="fa fa-user"></i>Paciente</a></li>
                 <li><a href="#"><i class="fa fa-circle-o"></i>Historial</a></li>
                
               </ul>
@@ -96,37 +96,102 @@
           </ul>
         </section>
       </aside>
-      <div class="content-wrapper">
-     <div id="page-wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Agregar Usuario</h1>
-                </div>
-                <!-- /.col-lg-12 -->
+      <div class="content-wrapper" >
+      <div class="col-lg-12">
+        <div class="page-title">
+          <div>
+            <h1><i class="fa fa-edit"></i> Registro de Usuario</h1>
+            <p>Nuevo Usuario</p>
+          </div>
+          <div>
+            <ul class="breadcrumb">
+              <li><i class="fa fa-home fa-lg"></i></li>
+              <li><a href="#">Lista de Usuario</a></li>
+              <li>Registro Usuario</li>
+            </ul>
+          </div>
+        </div>
+
+        <!--*****************REGISTRO DE PACIENTE*******************-->
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card">
+              <h3 class="card-title">Registrar</h3>
+              <div class="card-body">
+                <form >
+                <div class="cold-lg-6">
+                  <div class="form-group">
+                    <label class="control-label">Correo Electrónico</label>
+                    <input class="form-control" type="text" placeholder="Ingresar Correo Electrónico">
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Password</label>
+                    <input class="form-control" type="Password" placeholder="Ingresar Password">
+                  </div>
+                 
+                  <div class="form-group">
+                    <label class="control-label">Tipo Usuario</label>
+                        <select class="form-control" id="select">
+                                <option value=""  >-- Seleccionar --</option>
+                                <option value="1">Administrador</option>
+                                <option value="3" >Cliente</option>
+                                <option value="6" >Empleado</option>
+                               
+                        </select>
+                  </div>
+                  <!--NUMBERDOC-->
+                  
+                  
+                  <div class="form-group">
+                    <label class="control-label">Estado <input type="checkbox"></label>
+                    
+                    </div>
+                  
+
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">Acepto los términos y condiciones
+                      </label>
+                    </div>
+                  </div>
+                  </div>
+                </form>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-primary icon-btn" type="button"><i class="fa fa-fw fa-lg fa-check-circle"></i>Registrar</button>&nbsp;&nbsp;&nbsp;<a class="btn btn-default icon-btn" href="#"><i class="fa fa-fw fa-lg fa-times-circle"></i>Cancelar</a>
+              </div>
             </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="panel panel-default">
+          </div>
+
+          <!--*************DATOS SECUNDARIOS*************-->
 
           
-         
-        
-
-
-     
-                        
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-12 -->
+          <!--SUSCRIBE-->
+          <div class="col-md-12">
+            <div class="card">
+              <h3 class="card-title">Susbribirse</h3>
+              <div class="card-body3">
+                <form class="form-inline">
+                  <div class="form-group">
+                    <label class="control-label">Nombre: </label>
+                    <input class="form-control" type="text" placeholder="Ingrese nombre">
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Email: </label>
+                    <input class="form-control" type="text" placeholder="Ingrese su correo electrónico">
+                  </div>
+                  <div class="form-group">
+                    <button class="btn btn-primary icon-btn" type="button"><i class="fa fa-fw fa-lg fa-check-circle"></i>Subscribirse</button>
+                  </div>
+                </form>
+              </div>
             </div>
-            <!-- /.row -->
+          </div>
+          <!--ENDSUSCRIBE-->
         </div>
-        
-  
-    </div>
+      </div>
+      </div>
     <!-- Javascripts-->
    <script src="../js/jquery-2.1.4.min.js"></script>
     <script src="../js/essential-plugins.js"></script>
