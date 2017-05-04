@@ -114,14 +114,14 @@
         <!-- **********TITLE********** -->
         <div class="page-title">
           <div>
-            <h1><i class="fa fa-edit"></i> Edición de Paciente</h1>
-            <p>Edición Paciente</p>
+            <h1><i class="fa fa-edit"></i> Edición de Empleado</h1>
+            <p>Edición Empleado</p>
           </div>
           <div>
             <ul class="breadcrumb">
               <li><i class="fa fa-home fa-lg"></i></li>
-              <li><a href="index.html">Lista de Paciente</a></li>
-              <li>Edición de Paciente</li>
+              <li><a href="index.html">Lista de Empleado</a></li>
+              <li>Edición de Empleado</li>
             </ul>
           </div>
         </div>
@@ -184,12 +184,16 @@
                   </div>
                   <!--ESTADO-->
                   <div class="form-group">
-                    <label class="control-label">Estado</label>
-                    <div class="animated-checkbox">
-                        <label>
-                          <input type="checkbox" checked="checked" disabled ><span class="label-text">Estado</span>
-                        </label>
-                    </div>
+                    <label class="control-label">Tipo de Cargo</label>
+                        <select class="form-control" id="select">
+                                <option value=""  >-- Seleccionar --</option>
+                                <option value="1">Administrador</option>
+                                <option value="3" >Contador</option>
+                                <option value="6" >Medico</option>
+                                <option value="7">Asistente</option>
+                                <option value="11" >Recepcionista</option>
+                                <option value="00" >Otros</option>
+                        </select>
                   </div>                              
                 </form>
               </div>
@@ -478,7 +482,6 @@
 
 
 
-    
 
 
     </div>
