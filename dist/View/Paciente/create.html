@@ -106,8 +106,12 @@
 
 
 
-      <!-- EDITAR DESDE AQUÍ -->
+
+
       <div class="content-wrapper">
+      <!-- EDITAR DESDE AQUÍ -->
+        
+        <!-- **********TITLE********** -->
         <div class="page-title">
           <div>
             <h1><i class="fa fa-edit"></i> Registro de Paciente</h1>
@@ -124,23 +128,29 @@
 
         <!--*****************REGISTRO DE PACIENTE*******************-->
         <div class="row">
+
           <div class="col-md-6">
             <div class="card">
+              <!-- **********PARTE 1******** -->
               <h3 class="card-title">Registrar</h3>
               <div class="card-body">
                 <form>
+                  <!--NAME-->
                   <div class="form-group">
                     <label class="control-label">Nombre</label>
                     <input class="form-control" type="text" placeholder="Ingresar nombre completo">
                   </div>
+                  <!--SURNAME-1-->
                   <div class="form-group">
                     <label class="control-label">Apellido Paterno</label>
                     <input class="form-control" type="text" placeholder="Ingresar apellido paterno">
                   </div>
+                  <!--SURNAME-2-->
                   <div class="form-group">
                     <label class="control-label">Apellido Materno</label>
                     <input class="form-control" type="text" placeholder="Ingresar apellido materno">
                   </div>
+                  <!--DOCUMENTTYPE-->
                   <div class="form-group">
                     <label class="control-label">Tipo de Documento</label>
                         <select class="form-control" id="select">
@@ -153,41 +163,43 @@
                                 <option value="00" >Otros</option>
                         </select>
                   </div>
-                  <!--NUMBERDOC-->
+                  <!--NUMBERDOCUMENT-->
                   <div class="form-group">
                     <label class="control-label">Número de Documento</label>
                     <input class="form-control" type="text" placeholder="Ingresar número de documento">
                   </div>
-                  
+                  <!--NUMBERDOC-->
+                  <div class="form-group">
+                    <label class="control-label">Razón Social</label>
+                    <input class="form-control" type="text" placeholder="Ingresar razón social">
+                  </div>
+                  <!--MARITALSTATUS-->
+                  <div class="form-group">
+                    <label class="control-label">Estado Civil</label>
+                        <select class="form-control" id="select">
+                                <option value=""  >-- Seleccionar --</option>
+                                <option value="1">Casado</option>
+                                <option value="3" >Soltero</option>
+                        </select>
+                  </div>
+                  <!--ESTADO-->
                   <div class="form-group">
                     <label class="control-label">Estado</label>
-                    <div class="checkbox">
-                              <label>
-                                <input type="checkbox" disabled checked>Checkbox
-                              </label>
-                            </div>
+                    <div class="animated-checkbox">
+                        <label>
+                          <input type="checkbox" disabled checked><span class="label-text">Estado</span>
+                        </label>
                     </div>
-                  
-
-                  <div class="form-group">
-                    <div class="checkbox">
-                      <label>
-                        <input type="checkbox">I accept the terms and conditions
-                      </label>
-                    </div>
-                  </div>
+                  </div>                              
                 </form>
-              </div>
-              <div class="card-footer">
-                <button class="btn btn-primary icon-btn" type="button"><i class="fa fa-fw fa-lg fa-check-circle"></i>Register</button>&nbsp;&nbsp;&nbsp;<a class="btn btn-default icon-btn" href="#"><i class="fa fa-fw fa-lg fa-times-circle"></i>Cancel</a>
               </div>
             </div>
           </div>
 
-          <!--*************DATOS SECUNDARIOS*************-->
+          <!--*************RECORD-2*************-->
           <div class="col-md-6">
             <div class="card">
-              <h3 class="card-title">Registrar Datos Secundarios</h3>
+              <h3 class="card-title">*</h3>
               <div class="card-body">
                 <form class="form-horizontal">
                     <!--NUMBERPHONE-->
@@ -197,7 +209,7 @@
                         <input class="form-control" type="email" placeholder="Ingrese su número">
                     </div>
                   </div>
-                    <!--FECHANACIMIENTO-->
+                    <!--BIRTHDATE-->
                   <div class="form-group">
                     <label class="control-label col-md-3">Fecha de Nacimiento</label>
                     <div class="col-md-8">
@@ -277,56 +289,195 @@
                       <input class="form-control" type="file">
                     </div>
                   </div>
-                  <div class="form-group">
-                    <div class="col-md-8 col-md-offset-3">
-                      <div class="checkbox">
-                        <label>
-                          <input type="checkbox">Acepta los terminos y condiciones
-                        </label>
-                      </div>
-                    </div>
-                  </div>
+                  <hr>
                 </form>
-              </div>
-              <div class="card-footer">
-                <div class="row">
-                  <div class="col-md-8 col-md-offset-3">
-                    <button class="btn btn-primary icon-btn" type="button"><i class="fa fa-fw fa-lg fa-check-circle"></i>Register</button>&nbsp;&nbsp;&nbsp;
-                    <a class="btn btn-default icon-btn" href="#">
-                    <i class="fa fa-fw fa-lg fa-times-circle"></i>Cancel</a>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
-          <div class="clearix"></div>
-          
-          <!--SUSCRIBE-->
-          <div class="col-md-12">
-            <div class="card">
-              <!--h3 class="card-title">Susbribirse</h3>
-              <div class="card-body3">
+
+          <!-- **********RECORD-3********** -->
+          <!-- **********ENDRECORD-3********** -->
+
+
+
+          <!-- **********STARTCONFIRMATION********** -->
+          <div class="col-md-12" style="text-align: center;">
+            <div class="card">  
+              <div class="card-body">
                 <form class="form-inline">
-                  <div class="form-group">
-                    <label class="control-label">Nombre: </label>
-                    <input class="form-control" type="text" placeholder="Ingrese nombre">
-                  </div>
-                  <div class="form-group">
-                    <label class="control-label">Email: </label>
-                    <input class="form-control" type="text" placeholder="Ingrese su correo electrónico">
-                  </div>
-                  <div class="form-group">
-                    <button class="btn btn-primary icon-btn" type="button"><i class="fa fa-fw fa-lg fa-check-circle"></i>Subscribirse</button>
-                  </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <button class="btn btn-primary icon-btn" type="button">
+                          <i class="fa fa-fw fa-lg fa-check-circle">
+                          </i>Register</button>&nbsp;&nbsp;&nbsp;
+                          <a class="btn btn-default icon-btn" href="#">
+                          <i class="fa fa-fw fa-lg fa-times-circle"></i>Cancel</a>
+                        </div>
+                      </div>
                 </form>
               </div>
-            </div-->
+            </div>
           </div>
-          <!--ENDSUSCRIBE-->
-        </div>
-      </div>
-      <!--FIN DE EDICIÓN-->
+          <!-- **********ENDCONFIRMATION********** -->
+          <!--*************ADDITIONAL***********-->
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="well bs-component">
+                            <form class="form-horizontal has-success">
+                              <fieldset>
+                                <legend>*Otros</legend>
+                                <!--EMAIL2-->
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label" for="inputEmail">Email 2</label>
+                                  <div class="col-lg-10">
+                                    <input class="form-control" id="inputEmail" type="text" placeholder="Email">
+                                  </div>
+                                </div>
+                                <!--NUMBERPHONE-->
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label" for="inputEmail">N° Telefónico / Celular</label>
+                                  <div class="col-lg-10">
+                                    <input class="form-control" type="email" placeholder="número">
+                                  </div>
+                                </div>
+                                <!--ADDRESS2-->
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label" for="textArea">Dirección 2</label>
+                                  <div class="col-lg-10">
+                                    <textarea class="form-control" id="textArea" rows="3"></textarea>
+                                  </div>
+                                </div>
+                                <!--TRACK-->
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label" for="select">Vía</label>
+                                  <div class="col-lg-10">
+                                    <select class="form-control" id="select">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <!--NAMETRACK-->
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label">Nombre Vía</label>
+                                  <div class="col-lg-10">
+                                      <input class="form-control" type="text" placeholder="Ingresar nombre de vía">
+                                  </div>
+                                </div>
+                              </fieldset>
+                            </form>
+                          </div>
+                        </div>
+                        <!--*****2*****-->
+                        <div class="col-lg-6">
+                          <form class="form-horizontal has-success">
+                            <legend>*Otros</legend>
+                                <!--TRACK-->
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label" for="select">Vía</label>
+                                  <div class="col-lg-10">
+                                    <select class="form-control" id="select">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <!--NAMETRACK-->
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label">Nombre Vía</label>
+                                  <div class="col-lg-10">
+                                      <input class="form-control" type="text" placeholder="Ingresar nombre de vía">
+                                  </div>
+                                </div>
+                                <!--ZONE-->
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label" for="select">Zona</label>
+                                  <div class="col-lg-10">
+                                    <select class="form-control" id="select">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <!--NAMEZONE-->
+                                <div class="form-group">
+                                  <label class="control-label col-lg-2">Nombre Zona</label>
+                                    <div class="col-lg-10">
+                                      <input class="form-control" type="text" placeholder="Ingresar nombre de zona">
+                                    </div>
+                                </div>
+                                <!--DIE-->
+                                <div class="form-group">
+                                      <label class="control-label col-lg-2 ">Defunsión</label>
+                                      <div class="col-lg-10">
+                                        <div class="animated-radio-button">
+                                          <label>
+                                                <input id="optionsRadios1" type="radio" name="optionsRadios" value="option1"><span class="label-text">Si</span>
+                                          </label>
+                                          <label for="" style="width: 30px;"></label>
+                                          <label>
+                                              <input id="optionsRadios1" type="radio" name="optionsRadios" value="option2" checked=""><span class="label-text">No</span>
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                <!--DIEDATE-->
+                                <div class="form-group">
+                                  <label class="control-label col-lg-2 ">Fecha de Defunción</label>
+                                  <div class="col-lg-8">
+                                      <input class="form-control" type="date" value="2017-01-01" id="example-date-input">
+                                  </div>
+                                </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- **********STARTCONFIRMATION********** -->
+                  <div class="col-md-12" style="text-align: center;">
+                    <div class="card">  
+                      <div class="card-body">
+                        <form class="form-inline">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <button class="btn btn-primary icon-btn" type="button">
+                                  <i class="fa fa-fw fa-lg fa-check-circle">
+                                  </i>Register</button>&nbsp;&nbsp;&nbsp;
+                                  <a class="btn btn-default icon-btn" href="#">
+                                  <i class="fa fa-fw fa-lg fa-times-circle"></i>Cancel</a>
+                                </div>
+                              </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                 <!-- **********ENDCONFIRMATION********** -->
+              </div>
 
+
+
+
+
+        <!-- **********END OF EDITION*********** -->
+        </div>
+
+
+
+
+      </div>
 
 
     </div>
