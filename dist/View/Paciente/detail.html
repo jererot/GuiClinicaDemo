@@ -114,14 +114,14 @@
         <!-- **********TITLE********** -->
         <div class="page-title">
           <div>
-            <h1><i class="fa fa-check-circle"></i> Registro de Paciente</h1>
-            <p>Nuevo Paciente</p>
+            <h1><i class="fa fa-edit"></i> Detalle de Paciente</h1>
+            <p>Detalle Paciente</p>
           </div>
           <div>
             <ul class="breadcrumb">
               <li><i class="fa fa-home fa-lg"></i></li>
               <li><a href="index.html">Lista de Paciente</a></li>
-              <li>Registro Paciente</li>
+              <li>Detalle de Paciente</li>
             </ul>
           </div>
         </div>
@@ -132,30 +132,30 @@
           <div class="col-md-6">
             <div class="card">
               <!-- **********PARTE 1******** -->
-              <h3 class="card-title">Registrar</h3>
+              <h3 class="card-title"></h3>
               <div class="card-body">
                 <form>
                   <!--NAME-->
                   <div class="form-group">
                     <label class="control-label">Nombre</label>
-                    <input class="form-control" type="text" placeholder="Ingresar nombre completo">
+                    <input class="form-control" type="text" value="Federico Manuel" placeholder="Ingresar nombre completo">
                   </div>
                   <!--SURNAME-1-->
                   <div class="form-group">
                     <label class="control-label">Apellido Paterno</label>
-                    <input class="form-control" type="text" placeholder="Ingresar apellido paterno">
+                    <input class="form-control" type="text" value="Casas" placeholder="Ingresar apellido paterno">
                   </div>
                   <!--SURNAME-2-->
                   <div class="form-group">
                     <label class="control-label">Apellido Materno</label>
-                    <input class="form-control" type="text" placeholder="Ingresar apellido materno">
+                    <input class="form-control" type="text" value="León" placeholder="Ingresar apellido materno">
                   </div>
                   <!--DOCUMENTTYPE-->
                   <div class="form-group">
                     <label class="control-label">Tipo de Documento</label>
-                        <select class="form-control" id="select">
+                        <select class="form-control" id="select" >
                                 <option value=""  >-- Seleccionar --</option>
-                                <option value="1">LIBRETA ELECTORAL O DNI</option>
+                                <option value="1" selected >LIBRETA ELECTORAL O DNI</option>
                                 <option value="3" >CARNET DE EXTRANJERIA</option>
                                 <option value="6" >REG. UNICO DE CONTRIBUYENTES</option>
                                 <option value="7">PASAPORTE</option>
@@ -166,7 +166,7 @@
                   <!--NUMBERDOCUMENT-->
                   <div class="form-group">
                     <label class="control-label">Número de Documento</label>
-                    <input class="form-control" type="text" placeholder="Ingresar número de documento">
+                    <input class="form-control" type="text" value="71832412" placeholder="Ingresar número de documento">
                   </div>
                   <!--NUMBERDOC-->
                   <div class="form-group">
@@ -179,7 +179,7 @@
                         <select class="form-control" id="select">
                                 <option value=""  >-- Seleccionar --</option>
                                 <option value="1">Casado</option>
-                                <option value="3" >Soltero</option>
+                                <option value="3" selected >Soltero</option>
                         </select>
                   </div>
                   <!--ESTADO-->
@@ -187,7 +187,7 @@
                     <label class="control-label">Estado</label>
                     <div class="animated-checkbox">
                         <label>
-                          <input type="checkbox" disabled checked><span class="label-text">Estado</span>
+                          <input type="checkbox" checked="checked" disabled ><span class="label-text">Estado</span>
                         </label>
                     </div>
                   </div>                              
@@ -206,14 +206,14 @@
                   <div class="form-group">
                     <label class="control-label col-md-3">N° Telefónico / Celular</label>
                     <div class="col-md-8">
-                        <input class="form-control" type="email" placeholder="Ingrese su número">
+                        <input class="form-control" type="email" value="987453123" placeholder="Ingrese su número">
                     </div>
                   </div>
                     <!--BIRTHDATE-->
                   <div class="form-group">
                     <label class="control-label col-md-3">Fecha de Nacimiento</label>
                     <div class="col-md-8">
-                        <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                        <input class="form-control" type="date" value="1987-08-19" id="example-date-input">
                     </div>
                   </div>
                   <!--DEPARTAMENTO-->
@@ -222,7 +222,7 @@
                     <div class="col-md-8">
                       <select class="form-control" id="select">
                                 <option value="0"  >-- Seleccionar --</option>
-                                <option value="1">Lima</option>
+                                <option value="1" selected>Lima</option>
                                 <option value="2" >Ancash</option>
                                 <option value="3" >La libertad</option>
                                 <option value="00" >Loreto</option>
@@ -235,9 +235,9 @@
                     <div class="col-md-8">
                       <select class="form-control" id="select">
                                 <option value="0"  >-- Seleccionar --</option>
-                                <option value="1">Lima</option>
+                                <option value="1" >Lima</option>
                                 <option value="2" >Huaraz</option>
-                                <option value="3" >*</option>
+                                <option value="3" selected>Barranca</option>
                                 <option value="00" >*</option>
                         </select>
                     </div>
@@ -248,9 +248,9 @@
                     <div class="col-md-8">
                       <select class="form-control" id="select">
                                 <option value="0"  >-- Seleccionar --</option>
-                                <option value="1">Supe Puero</option>
+                                <option value="1" >Supe Puero</option>
                                 <option value="2" >Lima</option>
-                                <option value="3" >*</option>
+                                <option value="3" selected >Paramonga</option>
                                 <option value="00" >*</option>
                         </select>
                     </div>
@@ -261,7 +261,7 @@
                     <div class="col-md-8">
                       <select class="form-control" id="select">
                                 <option value="0"  >-- Seleccionar --</option>
-                                <option value="1">Hombre</option>
+                                <option value="1" selected>Hombre</option>
                                 <option value="2" >Mujer</option>
                                 <option value="3" >Otro</option>
                                 <option value="00" >Prefiero no decirlo</option>
@@ -272,14 +272,15 @@
                   <div class="form-group">
                     <label class="control-label col-md-3">Email</label>
                     <div class="col-md-8">
-                        <input class="form-control" type="email" placeholder="Ingrese su correo electrónico">
+                        <input class="form-control" type="email" value="maulitotuchikito@lmail.com" placeholder="Ingrese su correo electrónico">
                     </div>
                   </div>
                   <!--ADDRESS-->
                   <div class="form-group">
                     <label class="control-label col-md-3">Dirección</label>
                     <div class="col-md-8">
-                      <textarea class="form-control"  rows="4" placeholder="Enter your address"></textarea>
+                      <textarea class="form-control"  rows="4"  placeholder="Enter your address">Avenida manzanares Cuadra 2 N° 234 Mz F Lot 02
+                      </textarea>
                     </div>
                   </div>
                   <!--PHOTO-->
@@ -307,11 +308,11 @@
                 <form class="form-inline">
                       <div class="row">
                         <div class="col-md-12">
-                          <button class="btn btn-primary icon-btn" type="button">
-                          <i class="fa fa-fw fa-lg fa-check-circle">
-                          </i>Registrar</button>&nbsp;&nbsp;&nbsp;
-                          <a class="btn btn-default icon-btn" href="#">
-                          <i class="fa fa-fw fa-lg fa-times-circle"></i>Cancelar</a>
+                          <button class="btn btn-warning icon-btn" type="button">
+                          <i class="fa fa-fw fa-lg fa-edit">
+                          </i>Editar</button>&nbsp;&nbsp;&nbsp;
+                          <a class="btn btn-default icon-btn" href="index.html">
+                          <i class="fa fa-fw fa-lg fa-times-circle"></i>Cancel</a>
                         </div>
                       </div>
                 </form>
@@ -453,11 +454,11 @@
                         <form class="form-inline">
                               <div class="row">
                                 <div class="col-md-12">
-                                  <button class="btn btn-primary icon-btn" type="button">
-                                  <i class="fa fa-fw fa-lg fa-check-circle">
-                                  </i>Registrar</button>&nbsp;&nbsp;&nbsp;
-                                  <a class="btn btn-default icon-btn" href="#">
-                                  <i class="fa fa-fw fa-lg fa-times-circle"></i>Cancelar</a>
+                                  <button class="btn btn-warning icon-btn" type="button">
+                                  <i class="fa fa-fw fa-lg fa-edit">
+                                  </i>Editar</button>&nbsp;&nbsp;&nbsp;
+                                  <a class="btn btn-default icon-btn" href="edit.html">
+                                  <i class="fa fa-fw fa-lg fa-times-circle"></i>Cancel</a>
                                 </div>
                               </div>
                         </form>
