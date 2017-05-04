@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <title>Clinica MagicDent</title>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!--if lt IE 9
+    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+    script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    -->
+    <style>
+      .borde1{border: 1px #000 solid; text-align: center}            
+      .borde{border: 1px #000fff solid;}
+      .borde2{border: 1px #295ba7 solid; text-align: center}
+      .action{  float: right;}
+    </style>
+  </head>
+  <body class="sidebar-mini fixed">
+    <div class="wrapper">
+      <!-- Navbar-->
+      <header class="main-header hidden-print"><a class="logo" href="../layout.html">CMD</a>
+        <nav class="navbar navbar-static-top">
+          <!-- Sidebar toggle button--><a class="sidebar-toggle" href="#" data-toggle="offcanvas"></a>
+           <div class="navbar-custom-menu">
+            <ul class="top-nav">
+              <!--Notification Menu-->
+             <li class="dropdown notification-menu"><a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-bell-o fa-lg"></i></a>
+                <ul class="dropdown-menu">
+                  <li class="not-head">Tienes 4 nuevas notificaciones</li>
+                  <li><a class="media" href="javascript:;"><span class="media-left media-icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
+                      <div class="media-body"><span class="block">Mariel te ha enviado un mensaje</span><span class="text-muted block">Hace 2 minutos</span></div></a></li>
+                  <li><a class="media" href="javascript:;"><span class="media-left media-icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
+                      <div class="media-body"><span class="block">El servidor no esta activo</span><span class="text-muted block">Hace 2 minutos</span></div></a></li>
+                  <li><a class="media" href="javascript:;"><span class="media-left media-icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
+                      <div class="media-body"><span class="block">Transacción abc terminada</span><span class="text-muted block">Hace 2 minutos</span></div></a></li>
+                  <li class="not-footer"><a href="#">Mirar todas las notificaciones</a></li>
+                </ul>
+              </li>
+              <!-- User Menu-->
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i></a>
+                <ul class="dropdown-menu settings-menu">
+                  <li><a href="#"><i class="fa fa-cog fa-lg"></i> Opciones</a></li>
+                  <li><a href="#"><i class="fa fa-user fa-lg"></i> Perfil</a></li>
+                  <li><a href="#"><i class="fa fa-sign-out fa-lg"></i> Salir</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Side-Nav-->
+      <aside class="main-sidebar hidden-print">
+        <section class="sidebar">
+             <div class="user-panel">
+            <div class="pull-left image"><img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image"></div>
+            <div class="pull-left info">
+              <p>JuanJ</p>
+              <p class="designation">Juan Jose</p>
+            </div>
+          </div>
+          <!-- Sidebar Menu-->
+         <ul class="sidebar-menu">
+            <li class="treeview"><a href="../layout.html"><i class="fa fa-dashboard"></i><span>Inicio</span></a></li>
+
+           <li class="treeview"><a href="#"><i class="fa fa-users"></i><span> Mant. Usuario</span><i class="fa fa-angle-right"></i></a>
+              <ul class="treeview-menu">
+                <li><a href="../Usuario/index.html"><i class="fa fa-user"></i>Usuario</a></li>
+                <li><a href="../Perfiles/index.html"><i class="fa fa-user"></i>Perfiles</a></li>
+                <li><a href="../Rol/index.html"><i class="fa fa-user"></i>Roles</a></li>
+              
+               
+              </ul>
+            </li>
+            <li class="treeview"><a href="#"><i class="fa fa-user"></i><span>Mant. Paciente</span><i class="fa fa-angle-right"></i></a>
+              <ul class="treeview-menu">
+                <li><a href="../Paciente/index.html"><i class="fa fa-user"></i>Paciente</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i>Historial</a></li>
+               
+              </ul>
+            </li>
+           
+            <li class="treeview"><a href="#"><i class="fa fa-edit"></i><span>Citas</span><i class="fa fa-angle-right"></i></a>
+              <ul class="treeview-menu">
+                <li><a href="#"><i class="fa fa-circle-o"></i>Registrar Cita</a></li>
+              </ul>
+            </li>
+            <li class="treeview"><a href="#"><i class="fa fa-user"></i><span>Empleado</span><i class="fa fa-angle-right"></i></a>
+              <ul class="treeview-menu">
+                <li><a href="#"><i class="fa fa-circle-o"></i>Registrar Empleado</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i>Registrar Asistencia</a></li>
+              </ul>
+            </li>
+            <li class="treeview"><a href="#"><i class="fa fa-file-text"></i><span>Servicios</span><i class="fa fa-angle-right"></i></a>
+              <ul class="treeview-menu">
+                <li><a href="#"><i class="fa fa-circle-o"></i> Registrar Servicio</a></li>
+                
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </aside>
+
+
+
+      <!-- EDITAR DESDE AQUÍ -->
+      <div class="content-wrapper">
+        <div class="page-title">
+          <div>
+            <h1><i class="fa fa-edit"></i> Registro de Paciente</h1>
+            <p>Nuevo Paciente</p>
+          </div>
+          <div>
+            <ul class="breadcrumb">
+              <li><i class="fa fa-home fa-lg"></i></li>
+              <li><a href="index.html">Lista de Paciente</a></li>
+              <li>Registro Paciente</li>
+            </ul>
+          </div>
+        </div>
+
+        <!--*****************REGISTRO DE PACIENTE*******************-->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <h3 class="card-title">Registrar</h3>
+              <div class="card-body">
+                <form>
+                  <div class="form-group">
+                    <label class="control-label">Nombre</label>
+                    <input class="form-control" type="text" placeholder="Ingresar nombre completo">
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Apellido Paterno</label>
+                    <input class="form-control" type="text" placeholder="Ingresar apellido paterno">
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Apellido Materno</label>
+                    <input class="form-control" type="text" placeholder="Ingresar apellido materno">
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Tipo de Documento</label>
+                        <select class="form-control" id="select">
+                                <option value=""  >-- Seleccionar --</option>
+                                <option value="1">LIBRETA ELECTORAL O DNI</option>
+                                <option value="3" >CARNET DE EXTRANJERIA</option>
+                                <option value="6" >REG. UNICO DE CONTRIBUYENTES</option>
+                                <option value="7">PASAPORTE</option>
+                                <option value="11" >PART. DE NACIMIENTO-IDENTIDAD</option>
+                                <option value="00" >Otros</option>
+                        </select>
+                  </div>
+                  <!--NUMBERDOC-->
+                  <div class="form-group">
+                    <label class="control-label">Número de Documento</label>
+                    <input class="form-control" type="text" placeholder="Ingresar número de documento">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label class="control-label">Estado</label>
+                    <div class="checkbox">
+                              <label>
+                                <input type="checkbox" disabled checked>Checkbox
+                              </label>
+                            </div>
+                    </div>
+                  
+
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox">I accept the terms and conditions
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-primary icon-btn" type="button"><i class="fa fa-fw fa-lg fa-check-circle"></i>Register</button>&nbsp;&nbsp;&nbsp;<a class="btn btn-default icon-btn" href="#"><i class="fa fa-fw fa-lg fa-times-circle"></i>Cancel</a>
+              </div>
+            </div>
+          </div>
+
+          <!--*************DATOS SECUNDARIOS*************-->
+          <div class="col-md-6">
+            <div class="card">
+              <h3 class="card-title">Registrar Datos Secundarios</h3>
+              <div class="card-body">
+                <form class="form-horizontal">
+                    <!--NUMBERPHONE-->
+                  <div class="form-group">
+                    <label class="control-label col-md-3">N° Telefónico / Celular</label>
+                    <div class="col-md-8">
+                        <input class="form-control" type="email" placeholder="Ingrese su número">
+                    </div>
+                  </div>
+                    <!--FECHANACIMIENTO-->
+                  <div class="form-group">
+                    <label class="control-label col-md-3">Fecha de Nacimiento</label>
+                    <div class="col-md-8">
+                        <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                    </div>
+                  </div>
+                  <!--DEPARTAMENTO-->
+                  <div class="form-group">
+                    <label class="control-label col-md-3">Departamento</label>
+                    <div class="col-md-8">
+                      <select class="form-control" id="select">
+                                <option value="0"  >-- Seleccionar --</option>
+                                <option value="1">Lima</option>
+                                <option value="2" >Ancash</option>
+                                <option value="3" >La libertad</option>
+                                <option value="00" >Loreto</option>
+                        </select>
+                    </div>
+                  </div>
+                  <!--PROVINCIA-->
+                  <div class="form-group">
+                    <label class="control-label col-md-3">Provincia</label>
+                    <div class="col-md-8">
+                      <select class="form-control" id="select">
+                                <option value="0"  >-- Seleccionar --</option>
+                                <option value="1">Lima</option>
+                                <option value="2" >Huaraz</option>
+                                <option value="3" >*</option>
+                                <option value="00" >*</option>
+                        </select>
+                    </div>
+                  </div>
+                  <!--DISTRITO-->
+                  <div class="form-group">
+                    <label class="control-label col-md-3">Distrito</label>
+                    <div class="col-md-8">
+                      <select class="form-control" id="select">
+                                <option value="0"  >-- Seleccionar --</option>
+                                <option value="1">Supe Puero</option>
+                                <option value="2" >Lima</option>
+                                <option value="3" >*</option>
+                                <option value="00" >*</option>
+                        </select>
+                    </div>
+                  </div>
+                  <!--SEXO-->
+                  <div class="form-group">
+                    <label class="control-label col-md-3">Sexo</label>
+                    <div class="col-md-8">
+                      <select class="form-control" id="select">
+                                <option value="0"  >-- Seleccionar --</option>
+                                <option value="1">Hombre</option>
+                                <option value="2" >Mujer</option>
+                                <option value="3" >Otro</option>
+                                <option value="00" >Prefiero no decirlo</option>
+                        </select>
+                    </div>
+                  </div>
+                  <!--EMAIL-->
+                  <div class="form-group">
+                    <label class="control-label col-md-3">Email</label>
+                    <div class="col-md-8">
+                        <input class="form-control" type="email" placeholder="Ingrese su correo electrónico">
+                    </div>
+                  </div>
+                  <!--ADDRESS-->
+                  <div class="form-group">
+                    <label class="control-label col-md-3">Dirección</label>
+                    <div class="col-md-8">
+                      <textarea class="form-control"  rows="4" placeholder="Enter your address"></textarea>
+                    </div>
+                  </div>
+                  <!--PHOTO-->
+                  <div class="form-group">
+                    <label class="control-label col-md-3">Prueba de Identidad</label>
+                    <div class="col-md-8">
+                      <input class="form-control" type="file">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-md-8 col-md-offset-3">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox">Acepta los terminos y condiciones
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="card-footer">
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-3">
+                    <button class="btn btn-primary icon-btn" type="button"><i class="fa fa-fw fa-lg fa-check-circle"></i>Register</button>&nbsp;&nbsp;&nbsp;
+                    <a class="btn btn-default icon-btn" href="#">
+                    <i class="fa fa-fw fa-lg fa-times-circle"></i>Cancel</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clearix"></div>
+          
+          <!--SUSCRIBE-->
+          <div class="col-md-12">
+            <div class="card">
+              <!--h3 class="card-title">Susbribirse</h3>
+              <div class="card-body3">
+                <form class="form-inline">
+                  <div class="form-group">
+                    <label class="control-label">Nombre: </label>
+                    <input class="form-control" type="text" placeholder="Ingrese nombre">
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label">Email: </label>
+                    <input class="form-control" type="text" placeholder="Ingrese su correo electrónico">
+                  </div>
+                  <div class="form-group">
+                    <button class="btn btn-primary icon-btn" type="button"><i class="fa fa-fw fa-lg fa-check-circle"></i>Subscribirse</button>
+                  </div>
+                </form>
+              </div>
+            </div-->
+          </div>
+          <!--ENDSUSCRIBE-->
+        </div>
+      </div>
+      <!--FIN DE EDICIÓN-->
+
+
+
+    </div>
+    <!-- Javascripts-->
+    <script src="../../js/jquery-2.1.4.min.js"></script>
+    <script src="../../js/essential-plugins.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/plugins/pace.min.js"></script>
+    <script src="../../js/main.js"></script>
+  </body>
+</html>
