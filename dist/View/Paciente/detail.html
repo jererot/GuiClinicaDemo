@@ -133,27 +133,27 @@
             <div class="card">
               <!-- **********PARTE 1******** -->
               <h3 class="card-title"></h3>
-              <div class="card-body">
+              <div class="card-body " >
                 <form>
                   <!--NAME-->
                   <div class="form-group">
                     <label class="control-label">Nombre</label>
-                    <input class="form-control" type="text" value="Federico Manuel" placeholder="Ingresar nombre completo">
+                    <input class="form-control" type="text" value="Federico Manuel" placeholder="Ingresar nombre completo" disabled>
                   </div>
                   <!--SURNAME-1-->
                   <div class="form-group">
                     <label class="control-label">Apellido Paterno</label>
-                    <input class="form-control" type="text" value="Casas" placeholder="Ingresar apellido paterno">
+                    <input class="form-control" type="text" value="Casas" placeholder="Ingresar apellido paterno" disabled>
                   </div>
                   <!--SURNAME-2-->
                   <div class="form-group">
                     <label class="control-label">Apellido Materno</label>
-                    <input class="form-control" type="text" value="León" placeholder="Ingresar apellido materno">
+                    <input class="form-control" type="text" value="León" placeholder="Ingresar apellido materno" disabled>
                   </div>
                   <!--DOCUMENTTYPE-->
                   <div class="form-group">
                     <label class="control-label">Tipo de Documento</label>
-                        <select class="form-control" id="select" >
+                        <select class="form-control" id="select" disabled>
                                 <option value=""  >-- Seleccionar --</option>
                                 <option value="1" selected >LIBRETA ELECTORAL O DNI</option>
                                 <option value="3" >CARNET DE EXTRANJERIA</option>
@@ -166,17 +166,17 @@
                   <!--NUMBERDOCUMENT-->
                   <div class="form-group">
                     <label class="control-label">Número de Documento</label>
-                    <input class="form-control" type="text" value="71832412" placeholder="Ingresar número de documento">
+                    <input class="form-control" type="text" value="71832412" placeholder="Ingresar número de documento" disabled>
                   </div>
                   <!--NUMBERDOC-->
                   <div class="form-group">
                     <label class="control-label">Razón Social</label>
-                    <input class="form-control" type="text" placeholder="Ingresar razón social">
+                    <input class="form-control" type="text" placeholder="Ingresar razón social" disabled>
                   </div>
                   <!--MARITALSTATUS-->
                   <div class="form-group">
                     <label class="control-label">Estado Civil</label>
-                        <select class="form-control" id="select">
+                        <select class="form-control" id="select" disabled>
                                 <option value=""  >-- Seleccionar --</option>
                                 <option value="1">Casado</option>
                                 <option value="3" selected >Soltero</option>
@@ -206,21 +206,21 @@
                   <div class="form-group">
                     <label class="control-label col-md-3">N° Telefónico / Celular</label>
                     <div class="col-md-8">
-                        <input class="form-control" type="email" value="987453123" placeholder="Ingrese su número">
+                        <input class="form-control" type="email" value="987453123" placeholder="Ingrese su número" disabled>
                     </div>
                   </div>
                     <!--BIRTHDATE-->
                   <div class="form-group">
                     <label class="control-label col-md-3">Fecha de Nacimiento</label>
                     <div class="col-md-8">
-                        <input class="form-control" type="date" value="1987-08-19" id="example-date-input">
+                        <input class="form-control" type="date" value="1987-08-19" id="example-date-input" disabled>
                     </div>
                   </div>
                   <!--DEPARTAMENTO-->
                   <div class="form-group">
-                    <label class="control-label col-md-3">Departamento</label>
+                    <label class="control-label col-md-3" >Departamento</label>
                     <div class="col-md-8">
-                      <select class="form-control" id="select">
+                      <select class="form-control" id="select" disabled>
                                 <option value="0"  >-- Seleccionar --</option>
                                 <option value="1" selected>Lima</option>
                                 <option value="2" >Ancash</option>
@@ -233,7 +233,7 @@
                   <div class="form-group">
                     <label class="control-label col-md-3">Provincia</label>
                     <div class="col-md-8">
-                      <select class="form-control" id="select">
+                      <select class="form-control" id="select" disabled>
                                 <option value="0"  >-- Seleccionar --</option>
                                 <option value="1" >Lima</option>
                                 <option value="2" >Huaraz</option>
@@ -246,7 +246,7 @@
                   <div class="form-group">
                     <label class="control-label col-md-3">Distrito</label>
                     <div class="col-md-8">
-                      <select class="form-control" id="select">
+                      <select class="form-control" id="select" disabled>
                                 <option value="0"  >-- Seleccionar --</option>
                                 <option value="1" >Supe Puero</option>
                                 <option value="2" >Lima</option>
@@ -259,7 +259,7 @@
                   <div class="form-group">
                     <label class="control-label col-md-3">Sexo</label>
                     <div class="col-md-8">
-                      <select class="form-control" id="select">
+                      <select class="form-control" id="select" disabled>
                                 <option value="0"  >-- Seleccionar --</option>
                                 <option value="1" selected>Hombre</option>
                                 <option value="2" >Mujer</option>
@@ -272,14 +272,14 @@
                   <div class="form-group">
                     <label class="control-label col-md-3">Email</label>
                     <div class="col-md-8">
-                        <input class="form-control" type="email" value="maulitotuchikito@lmail.com" placeholder="Ingrese su correo electrónico">
+                        <input class="form-control" type="email" value="maulitotuchikito@lmail.com" placeholder="Ingrese su correo electrónico" disabled>
                     </div>
                   </div>
                   <!--ADDRESS-->
                   <div class="form-group">
                     <label class="control-label col-md-3">Dirección</label>
                     <div class="col-md-8">
-                      <textarea class="form-control"  rows="4"  placeholder="Enter your address">Avenida manzanares Cuadra 2 N° 234 Mz F Lot 02
+                      <textarea class="form-control"  rows="4"  placeholder="Enter your address" disabled>Avenida manzanares Cuadra 2 N° 234 Mz F Lot 02
                       </textarea>
                     </div>
                   </div>
@@ -287,7 +287,7 @@
                   <div class="form-group">
                     <label class="control-label col-md-3">Prueba de Identidad</label>
                     <div class="col-md-8">
-                      <input class="form-control" type="file">
+                      <input class="form-control" type="file" disabled>
                     </div>
                   </div>
                   <hr>
@@ -334,28 +334,28 @@
                                 <div class="form-group">
                                   <label class="col-lg-2 control-label" for="inputEmail">Email 2</label>
                                   <div class="col-lg-10">
-                                    <input class="form-control" id="inputEmail" type="text" placeholder="Email">
+                                    <input class="form-control" id="inputEmail" type="text" placeholder="Email" disabled>
                                   </div>
                                 </div>
                                 <!--NUMBERPHONE-->
                                 <div class="form-group">
                                   <label class="col-lg-2 control-label" for="inputEmail">N° Telefónico / Celular</label>
                                   <div class="col-lg-10">
-                                    <input class="form-control" type="email" placeholder="número">
+                                    <input class="form-control" type="email" placeholder="número" disabled>
                                   </div>
                                 </div>
                                 <!--ADDRESS2-->
                                 <div class="form-group">
                                   <label class="col-lg-2 control-label" for="textArea">Dirección 2</label>
                                   <div class="col-lg-10">
-                                    <textarea class="form-control" id="textArea" rows="3"></textarea>
+                                    <textarea class="form-control" id="textArea" rows="3" disabled></textarea>
                                   </div>
                                 </div>
                                 <!--TRACK-->
                                 <div class="form-group">
                                   <label class="col-lg-2 control-label" for="select">Vía</label>
                                   <div class="col-lg-10">
-                                    <select class="form-control" id="select">
+                                    <select class="form-control" id="select" disabled>
                                       <option>1</option>
                                       <option>2</option>
                                       <option>3</option>
@@ -368,7 +368,7 @@
                                 <div class="form-group">
                                   <label class="col-lg-2 control-label">Nombre Vía</label>
                                   <div class="col-lg-10">
-                                      <input class="form-control" type="text" placeholder="Ingresar nombre de vía">
+                                      <input class="form-control" type="text" placeholder="Ingresar nombre de vía" disabled>
                                   </div>
                                 </div>
                               </fieldset>
@@ -383,7 +383,7 @@
                                 <div class="form-group">
                                   <label class="col-lg-2 control-label" for="select">Vía</label>
                                   <div class="col-lg-10">
-                                    <select class="form-control" id="select">
+                                    <select class="form-control" id="select" disabled>
                                       <option>1</option>
                                       <option>2</option>
                                       <option>3</option>
@@ -396,14 +396,14 @@
                                 <div class="form-group">
                                   <label class="col-lg-2 control-label">Nombre Vía</label>
                                   <div class="col-lg-10">
-                                      <input class="form-control" type="text" placeholder="Ingresar nombre de vía">
+                                      <input class="form-control" type="text" placeholder="Ingresar nombre de vía" disabled>
                                   </div>
                                 </div>
                                 <!--ZONE-->
                                 <div class="form-group">
                                   <label class="col-lg-2 control-label" for="select">Zona</label>
                                   <div class="col-lg-10">
-                                    <select class="form-control" id="select">
+                                    <select class="form-control" id="select" disabled>
                                       <option>1</option>
                                       <option>2</option>
                                       <option>3</option>
@@ -416,7 +416,7 @@
                                 <div class="form-group">
                                   <label class="control-label col-lg-2">Nombre Zona</label>
                                     <div class="col-lg-10">
-                                      <input class="form-control" type="text" placeholder="Ingresar nombre de zona">
+                                      <input class="form-control" type="text" placeholder="Ingresar nombre de zona" disabled>
                                     </div>
                                 </div>
                                 <!--DIE-->
@@ -438,7 +438,7 @@
                                 <div class="form-group">
                                   <label class="control-label col-lg-2 ">Fecha de Defunción</label>
                                   <div class="col-lg-8">
-                                      <input class="form-control" type="date" value="2017-01-01" id="example-date-input">
+                                      <input class="form-control" type="date" value="2017-01-01" id="example-date-input" disabled>
                                   </div>
                                 </div>
                           </form>
