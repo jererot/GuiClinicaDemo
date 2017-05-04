@@ -76,9 +76,9 @@
                
               </ul>
             </li>
-            <li class="treeview"><a href="#"><i class="fa fa-user"></i><span>Mant. Empleado</span><i class="fa fa-angle-right"></i></a>
+            <li class="treeview"><a href="#"><i class="fa fa-user"></i><span>Mant. Paciente</span><i class="fa fa-angle-right"></i></a>
               <ul class="treeview-menu">
-                <li><a href="../Empleado/index.html"><i class="fa fa-user"></i>Empleado</a></li>
+                <li><a href="../Paciente/index.html"><i class="fa fa-user"></i>Paciente</a></li>
                 <li><a href="#"><i class="fa fa-circle-o"></i>Historial</a></li>
                
               </ul>
@@ -106,113 +106,131 @@
       </aside>
 
 
-
+      
       <div class="content-wrapper">
+
         <!--********************************TITULO*******************************-->
+
         <div class="page-title">
           <div>
-            <h1><i class="fa fa-edit"></i> Mantenimiento de Citas</h1>
-            <p>Lista de citas ...!</p>
+            <h1><i class="fa fa-edit"></i>Registro de Cita</h1>
+            <p>Cita ...!</p>
           </div>
           <div>
             <ul class="breadcrumb">
               <li><i class="fa fa-home fa-lg"></i></li>
-              <li>Citas</li>
-              <li><a href="#">Lista Citas</a></li>
+              <li><a href="index.html">Mantenimiento de Citas</a></li>
+              <li>Registrar Cita</li>
             </ul>
           </div>
         </div>
         <!--********************************FIN TITULO*******************************-->
-        <!--AQUÍ VA EL CODIGO-->
+     
+        <!--***************************AQUÍ VA EL CODIGO******************************-->
         <div class="row">
-          <div class="col-md-12">
-            <!--CODIGO MODIFICAR-->
+          <!--CODIGO MODIFICAR-->
+          <div class="col-lg-12">
               <div class="card">
                 <!--*********************************************AQUÍ MODIFICAR CARD***************************-->
                 <!--*********************************************CARD***************************-->
-                    <!--CONTAINER TITLE-->
-                        <div class="container" id="MantenimientoEmpleado">
-                        <!--NOMBRE DE MANTENIMIENTO-->   
-                        <h3 style="display:inline-block;" class="header-title"><i class="glyphicon glyphicon-cog"></i>Lista de Citas</h3>
-                        </div>
-                        <!--ACTIONS-->
-                        <div class="card-title-w-btn ">               
-                                    <!--NEW PATIENT-->
-                                    <div class="bs-component">
-                                        <div >
-                                            <a class="btn btn-info icon-btn" href="create.html">
-                                            <i class="fa fa-fw fa-lg fa-user-plus"></i>Nueva Cita</a>
+                <!--****CITA****-->
+                      <h3 class="card-title">Nueva Cita</h3>
+                      <div class="card-body">
+                          <form>
+                                      <!--ASUNTO-->
+                                      <div class="form-group">
+                                        <label class="control-label">Asunto</label>
+                                          <textarea class="form-control"  rows="4" placeholder="Ingresar su asunto"></textarea>
+                                      </div>
+                                      <!--PACIENTE-->
+                                      <div class="form-group">
+                                        <label class="control-label">Paciente</label>
+                                        <div class="row">
+                                            <div class="col-md-10">
+                                            <input class="form-control " type="text" placeholder="Nombre completo" disabled>
+                                            </div>
+                                            <div class="col-md-2" style="text-align: right;">
+                                                    <a class="btn btn-info icon-btn" href="create.html">
+                                                    <i class="fa fa-fw fa-lg fa-user-plus">
+                                                    </i>
+                                                    </a>
+                                                    <a class="btn btn-success icon-btn" href="create.html">
+                                                    <i class="fa fa-fw fa-lg fa-search">
+                                                    </i>
+                                                    </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <!--EXPORT-->
-                                    <div class="btn-group"><a class="btn btn-primary dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-fw fa-lg fa-cloud-download"></i>Exportar <span class="caret"></span></a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">PDF</a></li>
-                                                <li><a href="#">Excel</a></li>
-                                                <li><a href="#">Otro</a></li>
-                                            </ul>                                   
-                                    </div>
-                        </div>
-                        <hr>   
-                                                
-                    <!--***************TABLE*************-->
+                                      </div>
+                                      <!--MEDICODETURNO-->
+                                      <div class="form-group">
+                                        <label class="control-label">Médico de turno</label>
+                                            <div class="row">
+                                                <div class="col-md-10">
+                                                    <select class="form-control" id="select">
+                                                        <option value=""  >-- Seleccionar --</option>
+                                                        <option value="1">Dr. Pedro Lorenzo Cardenas</option>
+                                                        <option value="3" >Dr. Jose Anibal León </option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-2" style="text-align: right;">
+                                                    <a class="btn btn-success icon-btn" href="create.html">
+                                                    <i class="fa fa-fw fa-lg fa-search">
+                                                    </i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                      </div>
+                                      <!--FECHAYHORA-->
+                                      <div class="form-group">                         
+                                      </div>
+                                      <div class="form-group">
+                                        <label class="control-label">Fecha y hora</label>
+                                            <div class="row">
+                                                <div class="col-md-10">
+                                                    <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                                                </div>
+                                                <div class="col-md-2" style="text-align: right;">
+                                                    <a class="btn btn-success icon-btn" href="create.html">
+                                                    <i class="fa fa-fw fa-lg fa-search">
+                                                    </i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                      </div>
+                                      <!--NOTA-->
+                                      <div class="form-group">
+                                        <label class="control-label">Nota</label>
+                                          <textarea class="form-control"  rows="4" placeholder="Ingresar nota"></textarea>
+                                      </div>                                            
+                              </form>              
+                      </div>
+
+                <!--***FINCITA***-->
+                <!-- **********STARTCONFIRMATION********** -->
+                  <div class="card" style="text-align: center;" >  
                     <div class="card-body">
-                              <table class="table table-hover table-bordered " id="sampleTable">
-                                <thead style="color:#ffffff;background:#0094ff;">
-                                  <tr>
-                                    <th>Nombres</th>
-                                    <th>Apellido Paterno</th>
-                                    <th>Apellido Materno</th>
-                                    <th>Tipo Documento</th>
-                                    <th>Documento</th>
-                                    <th>Cargo</th>
-                                    <th>Sueldo</th>
-                                    <th>Editar</th>
-                                    <th>Detalle</th>
-                                    <th>Eliminar</th>
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <td>Franco Eduardo</td>
-                                    <td>Cruz</td>
-                                    <td>Villanueva</td>
-                                    <td>Dni</td>
-                                    <td>71922271</td>
-                                    <td>ADMINISTRADOR</td>
-                                    <td>$320,800</td>
-                                    <td>
-                                        <div class="col-md-12">
-                                            <a class="btn btn-success btn-flat" href="detail.html"><i class="fa fa-lg fa-plus"></i></a>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="col-md-12">
-                                          <a class="btn btn-warning btn-flat" href="edit.html"><i class="fa fa-lg fa-edit"></i></a>
-                                      </div>
-                                    </td>
-                                    <td>
-                                        <div class="col-md-12">
-                                         <a class="btn btn-danger btn-flat" href="#"><i class="fa fa-lg fa-trash"></i></a>
-                                      </div>
-                                    </td>
-                                  </tr>
-                                  </tbody>
-                              </table>
-                    </div>
-
-                  <!--******************TABLE***********-->
+                        <form class="form-inline">
+                            <div class="row">
+                              <div class="col-md-12">
+                                <button class="btn btn-primary icon-btn" type="button">
+                                  <i class="fa fa-fw fa-lg fa-check-circle">
+                                  </i>Registrar</button>&nbsp;&nbsp;&nbsp;
+                                  <a class="btn btn-default icon-btn" href="#">
+                                  <i class="fa fa-fw fa-lg fa-times-circle"></i>Cancelar</a>
+                              </div>
+                            </div>                                      
+                        </form>                                 
+                      </div>               
+                  </div>                
+                <!-- **********ENDCONFIRMATION********** -->                                                            
               <!--*******************************************FIN***********************************-->
-                </div>                
-              </div>
-            <!--FIN DE MODIFICAR-->
+              </div>                
           </div>
+          <!--FIN DE MODIFICAR-->
         </div>
-
-
-
+        <!--*************************FIN AQUÍ VA EL CÓDIGO****************************-->
       </div>
-
+    </div>
 
 
     <!-- Javascripts-->
@@ -221,40 +239,5 @@
     <script src="../../../js/bootstrap.min.js"></script>
     <script src="../../../js/plugins/pace.min.js"></script>
     <script src="../../../js/main.js"></script>
-    <!--TABLESCRIPT-->
-    <script type="text/javascript" src="../../../js/plugins/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="../../../js/plugins/dataTables.bootstrap.min.js"></script>
-    <script type="text/javascript">
-    //$('#sampleTable').DataTable();
-
-                $(document).ready(function () 
-            {
-                $('#sampleTable').dataTable({
-
-                    language: {
-                        processing: "En curso...",
-                        search: "Buscar:",
-                        lengthMenu: "Visualizar _MENU_ registros",
-                        info: "_START_ de _END_ registros de un total de _TOTAL_ registros",
-                        infoEmpty: "0 registros encontrados",
-                        infoFiltered: "(_MAX_ registros filtrados en total)",
-                        infoPostFix: "",
-                        loadingRecords: "Cargando registros...",
-                        zeroRecords: "No hay registros",
-                        emptyTable: "Vacío",
-                        paginate: {
-                            first: "Primero",
-                            previous: "Previo  ",
-                            next: "  Siguiente",
-                            last: "Último"
-                        },
-                        aria: {
-                            sortAscending: ": Habilitado para ordenar la columna en orden ascendente",
-                            sortDescending: ": Habilitado para ordenar la columna en orden descendente"                }
-                    }
-                });
-
-            }); 
-    </script>
   </body>
 </html>
