@@ -103,12 +103,12 @@
         <div class="page-title">
           <div>
             <h1><i class="fa fa-edit"></i> Registro de Usuario</h1>
-            <p>Nuevo Usuario</p>
+            <p>Registro Usuario</p>
           </div>
           <div>
             <ul class="breadcrumb">
               <li><i class="fa fa-home fa-lg"></i></li>
-              <li><a href="#">Lista de Usuario</a></li>
+              <li><a href="#">Registro de Usuario</a></li>
               <li>Registro Usuario</li>
             </ul>
           </div>
@@ -116,26 +116,26 @@
 
         <!--*****************REGISTRO DE PACIENTE*******************-->
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-12">
             <div class="card">
               <h3 class="card-title">Registrar</h3>
               <div class="card-body">
                 <form >
-                <div class="cold-lg-6">
+                <div class="cold-lg-12">
                   <div class="form-group">
                     <label class="control-label">Correo Electrónico</label>
-                    <input class="form-control" type="text" placeholder="Ingresar Correo Electrónico">
+                    <input class="form-control" type="text" placeholder="Ingresar Correo" >
                   </div>
                   <div class="form-group">
                     <label class="control-label">Contraseña</label>
-                    <input class="form-control" type="Password" placeholder="Ingresar Contraseña">
+                    <input class="form-control" type="Password" placeholder="Ingresar Contraseña" >
                   </div>
                  
                   <div class="form-group">
                     <label class="control-label">Tipo Usuario</label>
-                        <select class="form-control" id="select">
+                        <select class="form-control" id="select" >
                                 <option value=""  >-- Seleccionar --</option>
-                                <option value="1">Administrador</option>
+                                <option selected ="1">Administrador</option>
                                 <option value="3" >Cliente</option>
                                 <option value="6" >Empleado</option>
                                
@@ -146,18 +146,26 @@
                   
                   
 
-                  <div class="form-group">
-                    <div class="checkbox">
-                      <label>
-                        <input type="checkbox">Acepto los términos y condiciones
-                      </label>
-                    </div>
-                  </div>
                   </div>
                 </form>
               </div>
-              <div class="card-footer">
-                <button class="btn btn-primary icon-btn" type="button"><i class="fa fa-fw fa-lg fa-check-circle"></i>Registrar</button>&nbsp;&nbsp;&nbsp;<a class="btn btn-default icon-btn" href="#"><i class="fa fa-fw fa-lg fa-times-circle"></i>Cancelar</a>
+              
+            </div>
+          </div>
+          <div class="col-lg-12" style="text-align: center;">
+            <div class="card">  
+              <div class="card-body">
+                <form class="form-inline">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <button class="btn btn-primary icon-btn" type="button">
+                          <i class="fa fa-fw fa-lg fa-check">
+                          </i>Registrar</button>&nbsp;&nbsp;&nbsp;
+                          <a class="btn btn-default icon-btn" href="index.html">
+                          <i class="fa fa-fw fa-lg fa-times-circle"></i>Cancel</a>
+                        </div>
+                      </div>
+                </form>
               </div>
             </div>
           </div>
@@ -171,6 +179,7 @@
         </div>
       </div>
       </div>
+      
     <!-- Javascripts-->
    <script src="../../js/jquery-2.1.4.min.js"></script>
     <script src="../../js/essential-plugins.js"></script>
