@@ -135,7 +135,10 @@
             <div class="card">
               <!-- **********PARTE 1******** -->
               <h3 class="card-title">Registrar</h3>
-              <div class="card-body">
+              
+              <label><a>N°0001</a></label>
+               
+               <div class="card-body">
                 <form>
                   <!--NAME-->
                   <div class="form-group">
@@ -172,8 +175,8 @@
                   </div>
                   <!--NUMBERDOC-->
                   <div class="form-group">
-                    <label class="control-label">Razón Social</label>
-                    <input class="form-control" type="text" placeholder="Ingresar razón social">
+                    <label class="control-label">Informacion01</label>
+                    <input class="form-control" type="text" placeholder="Ingresar Informacion01">
                   </div>
                   <!--MARITALSTATUS-->
                   <div class="form-group">
@@ -196,6 +199,16 @@
                                 <option value="11" >Recepcionista</option>
                                 <option value="00" >Otros</option>
                         </select>
+                  </div>
+                  <!-----EStado---->
+                   <div class="form-group">
+                    <label class="control-label">Estado</label>
+                    <div class="animated-checkbox">
+                          <!-----Disabled---->
+                         <label>
+                          <input type="checkbox" disabled checked><span class="label-text">Estado</span>
+                        </label>
+                    </div>
                   </div>                              
                 </form>
               </div>
@@ -288,6 +301,15 @@
                       <textarea class="form-control"  rows="4" placeholder="Enter your address"></textarea>
                     </div>
                   </div>
+                  <!--observacion-->
+                  <div class="form-group">
+                    <label class="control-label col-md-3">Observacion</label>
+                    <div class="col-md-8">
+                      <textarea class="form-control"  rows="4" placeholder="Observacion"></textarea>
+                    </div>
+                  </div>
+                  
+                  
                   <!--PHOTO-->
                   <div class="form-group">
                     <label class="control-label col-md-3">Prueba de Identidad</label>
@@ -325,6 +347,75 @@
             </div>
           </div>
           <!-- **********ENDCONFIRMATION********** -->
+          
+          
+          
+          
+          
+          <!-----------------Nueva tabla otro------------>
+           <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="well bs-component">
+                            <form class="form-horizontal has-success">
+                              <fieldset>
+                                
+                                
+                                <legend>*Otros Nuevo</legend>
+                                <!--Hora-->
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label" for="inputEmail">N°Horas</label>
+                                  <div class="col-lg-10">
+                                    <input class="form-control" id="inputEmail" type="text" placeholder="Ingresar cantidad de hora">
+                                  </div>
+                                </div>
+                                <!--NUMBERPHONE-->
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label" for="inputEmail">Salario</label>
+                                  <div class="col-lg-10">
+                                    <input class="form-control" type="email" placeholder="Salario">
+                                  </div>
+                                </div>
+                                
+                                <!--NAMETRACK-->
+                              </fieldset>
+                            </form>
+                          </div>
+                        </div>
+                        
+                        
+                        <!--*****2*****-->
+                        <div class="col-lg-6">
+                          <form class="form-horizontal has-success">
+                            <legend>*Otros Nuevo 2</legend>
+                                <!--TRACK-->
+                            
+                                <!--NAMETRACK-->
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label">Info 02</label>
+                                  <div class="col-lg-10">
+                                      <input class="form-control" type="text" placeholder="Ingresar nombre de vía">
+                                  </div>
+                                </div>
+                                <!--ZONE-->
+                            
+                                <!--NAMEZONE-->
+                                <div class="form-group">
+                                  <label class="control-label col-lg-2">Info 03</label>
+                                    <div class="col-lg-10">
+                                      <input class="form-control" type="text" placeholder="Ingresar nombre de zona">
+                                    </div>
+                                </div>
+                                
+                                
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
           <!--*************ADDITIONAL***********-->
                 <div class="row">
                   <div class="col-md-12">
@@ -424,7 +515,8 @@
                                       <input class="form-control" type="text" placeholder="Ingresar nombre de zona">
                                     </div>
                                 </div>
-                                <!--DIE-->
+                                
+                                <!--DIE-
                                 <div class="form-group">
                                       <label class="control-label col-lg-2 ">Defunsión</label>
                                       <div class="col-lg-10">
@@ -438,14 +530,24 @@
                                           </label>
                                         </div>
                                       </div>
-                                    </div>
-                                <!--DIEDATE-->
+                                    </div>-->
+                                    
+                                    
+                                <!--FECHA DE INGRESO-->
                                 <div class="form-group">
-                                  <label class="control-label col-lg-2 ">Fecha de Defunción</label>
+                                  <label class="control-label col-lg-2 ">Fecha de Ingreso</label>
                                   <div class="col-lg-8">
                                       <input class="form-control" type="date" value="2017-01-01" id="example-date-input">
                                   </div>
                                 </div>
+                                <!--FECHA DE CESE-->
+                                <div class="form-group">
+                                  <label class="control-label col-lg-2 ">Fecha de Cese</label>
+                                  <div class="col-lg-8">
+                                      <input class="form-control" type="date" value="2017-01-01" id="example-date-input">
+                                  </div>
+                                </div>
+                                
                           </form>
                         </div>
                       </div>

@@ -173,6 +173,13 @@
                     <label class="control-label">Razón Social</label>
                     <input class="form-control" type="text" placeholder="Ingresar razón social">
                   </div>
+                  
+                  <div class="form-group">
+                    <label class="control-label">Informacion01</label>
+                    <input class="form-control" type="text" placeholder="Ingresar Informacion01">
+                  </div>
+                  
+                  
                   <!--MARITALSTATUS-->
                   <div class="form-group">
                     <label class="control-label">Estado Civil</label>
@@ -187,7 +194,7 @@
                     <label class="control-label">Tipo de Cargo</label>
                         <select class="form-control" id="select">
                                 <option value=""  >-- Seleccionar --</option>
-                                <option value="1">Administrador</option>
+                                <option value="1" selected>Administrador</option>
                                 <option value="3" >Contador</option>
                                 <option value="6" >Medico</option>
                                 <option value="7">Asistente</option>
@@ -287,6 +294,16 @@
                       </textarea>
                     </div>
                   </div>
+                  
+                  <!--observacion-->
+                  <div class="form-group">
+                    <label class="control-label col-md-3">Observacion</label>
+                    <div class="col-md-8">
+                      <textarea class="form-control"  rows="4" placeholder="Observacion">aaaaaaaaaaaa</textarea>
+                    </div>
+                  </div>
+                  
+                  
                   <!--PHOTO-->
                   <div class="form-group">
                     <label class="control-label col-md-3">Prueba de Identidad</label>
@@ -324,6 +341,76 @@
             </div>
           </div>
           <!-- **********ENDCONFIRMATION********** -->
+          
+          
+          <!-- **********Nuevo Otros********** -->
+          
+            <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="well bs-component">
+                            <form class="form-horizontal has-success">
+                              <fieldset>
+                                
+                                
+                                <legend>*Otros Nuevo</legend>
+                                <!--Hora-->
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label" for="inputHoras">N°Horas</label>
+                                  <div class="col-lg-10">
+                                    <input class="form-control" id="inputEmail" type="text" value="8" placeholder="Ingresar cantidad de hora">
+                                    
+                                  </div>
+                                </div>
+                                <!--NUMBERPHONE-->
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label" for="inputSalario">Salario</label>
+                                  <div class="col-lg-10">
+                                    <input class="form-control" type="email" value="10000" placeholder="Salario">
+                                  </div>
+                                </div>
+                                
+                                <!--NAMETRACK-->
+                              </fieldset>
+                            </form>
+                          </div>
+                        </div>
+                        
+                        
+                        <!--*****2*****-->
+                        <div class="col-lg-6">
+                          <form class="form-horizontal has-success">
+                            <legend>*Otros Nuevo 2</legend>
+                                <!--TRACK-->
+                            
+                                <!--NAMETRACK-->
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label">Info 02</label>
+                                  <div class="col-lg-10">
+                                      <input class="form-control" type="text"  value="aaaaaaaaa" placeholder="Ingresar nombre de vía">
+                                  </div>
+                                </div>
+                                <!--ZONE-->
+                            
+                                <!--NAMEZONE-->
+                                <div class="form-group">
+                                  <label class="control-label col-lg-2">Info 03</label>
+                                    <div class="col-lg-10">
+                                      <input class="form-control" type="text" value="bbbbbbb" placeholder="Ingresar nombre de zona">
+                                    </div>
+                                </div>
+                                
+                                
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+          
           <!--*************ADDITIONAL***********-->
                 <div class="row">
                   <div class="col-md-12">
@@ -424,27 +511,27 @@
                                     </div>
                                 </div>
                                 <!--DIE-->
-                                <div class="form-group">
-                                      <label class="control-label col-lg-2 ">Defunsión</label>
-                                      <div class="col-lg-10">
-                                        <div class="animated-radio-button">
-                                          <label>
-                                                <input id="optionsRadios1" type="radio" name="optionsRadios" value="option1"><span class="label-text">Si</span>
-                                          </label>
-                                          <label for="" style="width: 30px;"></label>
-                                          <label>
-                                              <input id="optionsRadios1" type="radio" name="optionsRadios" value="option2" checked=""><span class="label-text">No</span>
-                                          </label>
-                                        </div>
-                                      </div>
-                                    </div>
+                                
+                                
                                 <!--DIEDATE-->
                                 <div class="form-group">
-                                  <label class="control-label col-lg-2 ">Fecha de Defunción</label>
+                                  <label class="control-label col-lg-2 ">Fecha de Ingreso</label>
                                   <div class="col-lg-8">
                                       <input class="form-control" type="date" value="2017-01-01" id="example-date-input">
                                   </div>
                                 </div>
+                                <!--FECHA DE CESE-->
+                                <div class="form-group">
+                                  <label class="control-label col-lg-2 ">Fecha de Cese</label>
+                                  <div class="col-lg-8">
+                                      <input class="form-control" type="date" value="2017-01-01" id="example-date-input">
+                                  </div>
+                                </div>
+
+                         
+                         
+                         
+                         
                           </form>
                         </div>
                       </div>
