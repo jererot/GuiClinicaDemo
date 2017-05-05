@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+ <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,15 +12,20 @@
     script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
     script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
     -->
+    <style>
+      .borde1{border: 1px #000 solid; text-align: center}            
+      .borde{border: 1px #000fff solid;}
+      .borde2{border: 1px #295ba7 solid; text-align: center}
+      .action{  float: right;}
+    </style>
   </head>
   <body class="sidebar-mini fixed">
     <div class="wrapper">
       <!-- Navbar-->
-      <header class="main-header hidden-print"><a class="logo" href="../../layout.html">CMD</a>
+      <header class="main-header hidden-print"><a class="logo" href="../layout.html">CMD</a>
         <nav class="navbar navbar-static-top">
           <!-- Sidebar toggle button--><a class="sidebar-toggle" href="#" data-toggle="offcanvas"></a>
-          <!-- Navbar Right Menu-->
-          <div class="navbar-custom-menu">
+           <div class="navbar-custom-menu">
             <ul class="top-nav">
               <!--Notification Menu-->
              <li class="dropdown notification-menu"><a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-bell-o fa-lg"></i></a>
@@ -47,10 +52,11 @@
           </div>
         </nav>
       </header>
-      <!-- Side-Nav-->
+
+
       <aside class="main-sidebar hidden-print">
         <section class="sidebar">
-          <div class="user-panel">
+             <div class="user-panel">
             <div class="pull-left image"><img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image"></div>
             <div class="pull-left info">
               <p>JuanJ</p>
@@ -58,21 +64,21 @@
             </div>
           </div>
           <!-- Sidebar Menu-->
-          <ul class="sidebar-menu">
-            <li class="treeview"><a href="../../layout.html"><i class="fa fa-dashboard"></i><span>Inicio</span></a></li>
+         <ul class="sidebar-menu">
+            <li class="treeview"><a href="../layout.html"><i class="fa fa-dashboard"></i><span>Inicio</span></a></li>
 
-           <li class="treeview"><a href="#"><i class="fa fa-users"></i><span>Mant. Usuario</span><i class="fa fa-angle-right"></i></a>
+           <li class="treeview"><a href="#"><i class="fa fa-users"></i><span> Mant. Usuario</span><i class="fa fa-angle-right"></i></a>
               <ul class="treeview-menu">
                 <li><a href="../Usuario/index.html"><i class="fa fa-user"></i>Usuario</a></li>
-                <li><a href="../Perfiles/index.html"><i class="fa fa-user"></i>Perfiles</a></li>
+               <li><a href="../Perfiles/index.html"><i class="fa fa-user"></i>Perfiles</a></li>
                 <li><a href="../Rol/index.html"><i class="fa fa-user"></i>Roles</a></li>
               
                
               </ul>
             </li>
-            <li class="treeview"><a href="#"><i class="fa fa-user"></i><span>Mant. Paciente</span><i class="fa fa-angle-right"></i></a>
+            <li class="treeview"><a href="#"><i class="fa fa-user"></i><span>Mant. Empleado</span><i class="fa fa-angle-right"></i></a>
               <ul class="treeview-menu">
-                <li><a href="../Paciente/index.html"><i class="fa fa-user"></i>Paciente</a></li>
+                <li><a href="../Empleado/index.html"><i class="fa fa-user"></i>Empleado</a></li>
                 <li><a href="#"><i class="fa fa-circle-o"></i>Historial</a></li>
                
               </ul>
@@ -80,12 +86,12 @@
            
             <li class="treeview"><a href="#"><i class="fa fa-edit"></i><span>Citas</span><i class="fa fa-angle-right"></i></a>
               <ul class="treeview-menu">
-                <li><a href="#"><i class="fa fa-circle-o"></i>Registrar Cita</a></li>
+                <li><a href="form-componants.html"><i class="fa fa-circle-o"></i>Registrar Cita</a></li>
               </ul>
             </li>
             <li class="treeview"><a href="#"><i class="fa fa-user"></i><span>Empleado</span><i class="fa fa-angle-right"></i></a>
               <ul class="treeview-menu">
-                <li><a href="../Empleado/index.html"><i class="fa fa-circle-o"></i>Registrar Empleado</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i>Registrar Empleado</a></li>
                 <li><a href="#"><i class="fa fa-circle-o"></i>Registrar Asistencia</a></li>
               </ul>
             </li>
@@ -99,40 +105,39 @@
         </section>
       </aside>
       <div class="content-wrapper">
-     
-        <!--AQUÍ VA EL CODIGO-->
+
+        <!--********************************TITULO*******************************-->
+
         <div class="page-title">
           <div>
-            <h1><i class="fa fa-edit"></i> Mantenimiento de Usuarios</h1>
+            <h1><i class="fa fa-cog"></i> Mantenimiento de Usuarios</h1>
             <p>Lista de usuarios ...!</p>
           </div>
           <div>
             <ul class="breadcrumb">
               <li><i class="fa fa-home fa-lg"></i></li>
-              <li>Pacientes</li>
-              <li><a href="#">Lista de usuarios</a></li>
+              <li>Usuarios</li>
+              <li><a href="#">Lista de Usuarios</a></li>
             </ul>
           </div>
         </div>
+        <!--********************************FIN TITULO*******************************-->
+     
+        <!--AQUÍ VA EL CODIGO-->
         <div class="row">
           <div class="col-md-12">
             <!--CODIGO MODIFICAR-->
               <div class="card">
-
                 <!--*********************************************AQUÍ MODIFICAR CARD***************************-->
-
                 <!--*********************************************CARD***************************-->
-
                     <!--CONTAINER TITLE-->
-                        <div class="container" id="MantenimientoUsuario">
+                        <div class="container" >
                         <!--NOMBRE DE MANTENIMIENTO-->   
-                                <h3 style="display:inline-block;" class="header-title"><i class="glyphicon glyphicon-cog"></i> Mantenimiento del Usuario</h3>
-                                
+                          <h3 style="display:inline-block;" class="header-title"><i class="glyphicon glyphicon-cog"></i> Lista de Usuarios</h3>
                         </div>
 
-                                <!--ACTIONS-->
-                        
-                       <div class="card-title-w-btn ">               
+                        <!--ACTIONS-->
+                  <div class="card-title-w-btn ">               
                         <!--NEW PATIENT-->
                         <div class="bs-component">
                           <div >
@@ -141,60 +146,58 @@
                           </div>
                         </div>
                         <!--EXPORT-->
-                        <div class="btn-group"><a class="btn btn-primary dropdown-toggle" href="#" data-toggle="dropdown">Exportar <span class="caret"></span></a>
+                        <div class="btn-group"><a class="btn btn-primary dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa fa-fw fa-lg fa-cloud-download"></i>Exportar <span class="caret"></span></a>
                                   <ul class="dropdown-menu">
                                     <li><a href="#">PDF</a></li>
                                     <li><a href="#">Excel</a></li>
                                     <li><a href="#">Otro</a></li>
                                   </ul>
-                        <div class="bs-component borde">
-                    </div>
-                  </div>
+                        </div>
                 </div>
-                         
-
-
-                        
-                    
-
-
-                        
-                  <!--***************TABLE-->
-                  <div class="card-body" style="text-align: center;">
-                            <table class="table table-hover table-bordered " id="sampleTable">
-                              <thead style="color:#ffffff;background:#0094ff;">
-                                <tr>
-                                  <th>Correo</th>                                
-                                  <th>Tipo Usuario</th>
-                                  <th>Detalle</th>
-                                  <th>Editar</th>
-                                  <th>eliminar</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>pepe@gmail.com</td>
-                                  <td>Administrador</td>
-                                  <td>
-                                        <div class="col-md-12">
-                                            <a class="btn btn-success btn-flat" href="detail.html"><i class="fa fa-lg fa-plus"></i></a>
+                  <hr>          
+                    <!--***************TABLE-->
+                    <div class="card-body">
+                              <table class="table table-hover table-bordered " id="sampleTable">
+                                <thead style="color:#ffffff;background:#0094ff;">
+                                  <tr>
+                                    <th> N° </th>
+                                    <th>Correo</th>
+                                    <th>Tipo Usuario</th>
+                                    <th>Estado</th>                                   
+                                    <th>Detalle</th>
+                                    <th>Editar</th>
+                                    <th>Eliminar</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>pepe@gmail.com</td>
+                                    <td>Administrador</td>
+                                    <td>
+                                        <div class="col-md-12" style="text-align: center;">
+                                            <a class="btn btn-success btn-flat" href="detail.html"><i class="fa fa-lg fa-thumbs-o-up"></i></a>
                                         </div>
                                     </td>
                                     <td>
-                                      <div class="col-md-12">
+                                        <div class="col-md-12" style="text-align: center;">
+                                            <a class="btn btn-default btn-flat" href="detail.html"><i class="fa fa-lg fa-plus"></i></a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="col-md-12" style="text-align: center;">
                                           <a class="btn btn-warning btn-flat" href="edit.html"><i class="fa fa-lg fa-edit"></i></a>
                                       </div>
                                     </td>
                                     <td>
-                                      <div class="col-md-12">
+                                        <div class="col-md-12" style="text-align: center;">
                                          <a class="btn btn-danger btn-flat" href="#"><i class="fa fa-lg fa-trash"></i></a>
                                       </div>
-                                    </td> 
-                                </tr>
-                                
-                              </tbody>
-                            </table>
-                          </div>
+                                    </td>
+                                  </tr>                                 
+                                  </tbody>
+                              </table>
+                    </div>
 
                   <!--******************TABLE***********-->
     
@@ -204,19 +207,21 @@
 
 
 
-              <!--*******************************************FIN***********************************->
+              <!--*******************************************FIN***********************************-->
+                </div>                
               </div>
-            <!-FIN DE MODIFICAR-->
+            <!--FIN DE MODIFICAR-->
           </div>
         </div>
 
 
 
       </div>
-  
-    </div>
+
+
+
     <!-- Javascripts-->
-   <script src="../../js/jquery-2.1.4.min.js"></script>
+    <script src="../../js/jquery-2.1.4.min.js"></script>
     <script src="../../js/essential-plugins.js"></script>
     <script src="../../js/bootstrap.min.js"></script>
     <script src="../../js/plugins/pace.min.js"></script>
@@ -254,8 +259,7 @@
                     }
                 });
 
-            });
-    
+            }); 
     </script>
   </body>
 </html>
