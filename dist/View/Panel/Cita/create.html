@@ -113,13 +113,13 @@
 
         <div class="page-title">
           <div>
-            <h1><i class="fa fa-edit"></i>Registro de Cita</h1>
+            <h1><i class="fa fa-cog"></i>Registro de Cita</h1>
             <p>Cita ...!</p>
           </div>
           <div>
             <ul class="breadcrumb">
               <li><i class="fa fa-home fa-lg"></i></li>
-              <li><a href="index.html">Mantenimiento de Citas</a></li>
+              <li><a href="index.html">Lista de Citas</a></li>
               <li>Registrar Cita</li>
             </ul>
           </div>
@@ -134,7 +134,7 @@
                 <!--*********************************************AQUÍ MODIFICAR CARD***************************-->
                 <!--*********************************************CARD***************************-->
                 <!--****CITA****-->
-                      <h3 class="card-title">Nueva Cita</h3>
+                      <h3 class="card-title"></h3>
                       <div class="card-body">
                           <form>
                                       <!--ASUNTO-->
@@ -150,7 +150,7 @@
                                             <input class="form-control " type="text" placeholder="Nombre completo" disabled>
                                             </div>
                                             <div class="col-md-2" style="text-align: right;">
-                                                    <a class="btn btn-info icon-btn" href="create.html">
+                                                    <a class="btn btn-info icon-btn" href="../../Paciente/create.html">
                                                     <i class="fa fa-fw fa-lg fa-user-plus">
                                                     </i>
                                                     </a>
@@ -160,6 +160,34 @@
                                                     </a>
                                             </div>
                                         </div>
+                                      </div>
+                                      <!--MEDICODETURNO-->
+                                      <div class="form-group">
+                                        <label class="control-label">Tipo de Servicio</label>
+                                            <div class="row">
+                                                <div class="col-md-10">
+                                                    <select class="form-control" id="select">
+                                                        <option value=""  >-- Seleccionar --</option>
+                                                        <option value="1">Dental</option>
+                                                        <option value="3" >Otros</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                      </div> 
+                                      <!--FECHAYHORA-->
+                                      <div class="form-group">
+                                        <label class="control-label">Fecha y hora de cita</label>
+                                            <div class="row">
+                                                <div class="col-md-10">
+                                                    <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                                                </div>
+                                                <div class="col-md-2" style="text-align: right;">
+                                                    <a class="btn btn-success icon-btn" href="create.html">
+                                                    <i class="fa fa-fw fa-lg fa-search">
+                                                    </i>
+                                                    </a>
+                                                </div>
+                                            </div>
                                       </div>
                                       <!--MEDICODETURNO-->
                                       <div class="form-group">
@@ -179,24 +207,7 @@
                                                     </a>
                                                 </div>
                                             </div>
-                                      </div>
-                                      <!--FECHAYHORA-->
-                                      <div class="form-group">                         
-                                      </div>
-                                      <div class="form-group">
-                                        <label class="control-label">Fecha y hora</label>
-                                            <div class="row">
-                                                <div class="col-md-10">
-                                                    <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
-                                                </div>
-                                                <div class="col-md-2" style="text-align: right;">
-                                                    <a class="btn btn-success icon-btn" href="create.html">
-                                                    <i class="fa fa-fw fa-lg fa-search">
-                                                    </i>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                      </div>
+                                      </div>                                     
                                       <!--NOTA-->
                                       <div class="form-group">
                                         <label class="control-label">Nota</label>
