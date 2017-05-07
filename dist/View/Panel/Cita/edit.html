@@ -191,6 +191,11 @@
                                         </li>
                                       </ul>
                                 </li>
+                                <li role="presentation">
+                                  <a href="#tab8" role="tab" id="samsa-tab" data-toggle="tab" aria-controls="samsa">
+                                    <span class="text">Inf. Diagnóstico</span>
+                                  </a>
+                                </li>
                               </ul>
                                 
                               <div id="myTabContent" class="tab-content">
@@ -590,6 +595,39 @@
                                           <!--PATHARCHIVO-->
                                           <div class="form-group">
                                             <label class="control-label">PATH</label>
+                                              <textarea class="form-control"  rows="4" placeholder="Ingresar nota" ></textarea>
+                                          </div> 
+                                          <!--FECHAREGISTRO-->
+                                          <div class="form-group">
+                                            <label class="control-label">Fecha de Registro</label>
+                                                <div class="row">
+                                                    <div class="col-md-10">
+                                                      <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input" >
+                                                    </div>
+                                                    <div class="col-md-2" style="text-align: right;">
+                                                        <a class="btn btn-success icon-btn" href="create.html">
+                                                        <i class="fa fa-fw fa-lg fa-search">
+                                                        </i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                          </div>                                   
+                                                                                     
+                                        </form> 
+                                      </div>    
+                                    </div>  
+                                  </div>
+                                </div>
+
+                                <!--DIAGNOSTICO-->
+                                <div role="tabpanel" class="tab-pane fade" id="tab8" aria-labelledby="dropdown1-tab">
+                                  <div class="row">
+                                    <div class="col-lg-10">
+                                      <div class="card">
+                                        <form id="InfAnammesis">
+                                          <!--DESCIRPCIONEXAMENMEDICO-->
+                                          <div class="form-group">
+                                            <label class="control-label">Descripción</label>
                                               <textarea class="form-control"  rows="4" placeholder="Ingresar nota" ></textarea>
                                           </div> 
                                           <!--FECHAREGISTRO-->
