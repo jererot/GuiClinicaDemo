@@ -143,58 +143,59 @@
                             <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
                               <ul id="myTab" class="nav nav-tabs nav-tabs-responsive" role="tablist">
                                 <li role="presentation" class="active">
-                                  <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">
+                                  <a href="#tab1" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">
                                     <span class="text">Inf. Básica</span>
                                   </a>
                                 </li>
                                 <li role="presentation" class="next">
-                                  <a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">
+                                  <a href="#tab2" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">
                                     <span class="text">Inf. Atensión</span>
                                   </a>
                                 </li>
-                                <li role="presentation" class="dropdown">
-                                  <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents">
-                                    <span class="text">Dropdown</span>
-                                    <span class="caret">
-                                    </span>
-                                  </a>
-                                  <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
-                                    <li>
-                                      <a href="#dropdown1" tabindex="-1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1">
-                                        <span>@fat</span>
-                                      </a>
-                                    </li>
-                                    <li>
-                                      <a href="#dropdown2" tabindex="-1" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2">
-                                        <span>@mdo</span>
-                                      </a>
-                                    </li>
-                                  </ul>
-                                </li>
                                 <li role="presentation">
-                                  <a href="#samsa" role="tab" id="samsa-tab" data-toggle="tab" aria-controls="samsa">
+                                  <a href="#tab3" role="tab" id="samsa-tab" data-toggle="tab" aria-controls="samsa">
                                     <span class="text">Inf. Exámen Físico</span>
                                   </a>
                                 </li>
                                 <li role="presentation">
-                                  <a href="#samsa" role="tab" id="samsa-tab" data-toggle="tab" aria-controls="samsa">
+                                  <a href="#tab4" role="tab" id="samsa-tab" data-toggle="tab" aria-controls="samsa">
                                     <span class="text">Inf. Función Vital</span>
                                   </a>
                                 </li>
                                 <li role="presentation">
-                                  <a href="#samsa" role="tab" id="samsa-tab" data-toggle="tab" aria-controls="samsa">
-                                    <span class="text">Inf. Anammesis</span>
+                                  <a href="#tab5" role="tab" id="samsa-tab" data-toggle="tab" aria-controls="samsa">
+                                    <span class="text">Inf. Evolución</span>
                                   </a>
                                 </li>
                                 <li role="presentation">
-                                  <a href="#samsa" role="tab" id="samsa-tab" data-toggle="tab" aria-controls="samsa">
-                                    <span class="text">Inf. Estudio Completo</span>
+                                  <a href="#tab6" role="tab" id="samsa-tab" data-toggle="tab" aria-controls="samsa">
+                                    <span class="text">Inf. Anammesis</span>
                                   </a>
+                                </li>
+                                <li role="presentation" class="dropdown">
+                                      <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents">
+                                        <span class="text">Inf. Estudio completo</span>
+                                        <span class="caret">
+                                        </span>
+                                      </a>
+                                      <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
+                                        <li>
+                                          <a href="#dropdown1" tabindex="-1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1">
+                                            <span>General</span>
+                                          </a>
+                                        </li>
+                                        <li>
+                                          <a href="#dropdown2" tabindex="-1" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2">
+                                            <span>Detallado</span>
+                                          </a>
+                                        </li>
+                                      </ul>
                                 </li>
                               </ul>
                                 
                               <div id="myTabContent" class="tab-content">
-                                <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+                                <!--INFOBASICA-->
+                                <div role="tabpanel" class="tab-pane fade in active" id="tab1" aria-labelledby="home-tab">
                                   <div class="row">
                                     <div class="col-lg-10">
                                       <div class="card">
@@ -286,7 +287,9 @@
                                     </div>  
                                   </div>                           
                                 </div>
-                                <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+
+                                <!--INFATENCIONL-->
+                                <div role="tabpanel" class="tab-pane fade" id="tab2" aria-labelledby="profile-tab">
                                   <div class="row">
                                     <div class="col-lg-10">
                                       <div class="card">
@@ -335,7 +338,9 @@
                                     </div>  
                                   </div>
                                 </div>
-                                <div role="tabpanel" class="tab-pane fade" id="dropdown1" aria-labelledby="dropdown1-tab">
+
+                                <!--INFEXAMFISICO-->
+                                <div role="tabpanel" class="tab-pane fade" id="tab3" aria-labelledby="dropdown1-tab">
                                   <div class="row">
                                     <div class="col-lg-10">
                                       <div class="card">
@@ -366,19 +371,124 @@
                                     </div>  
                                   </div>
                                 </div>
-                                <div role="tabpanel" class="tab-pane fade" id="dropdown2" aria-labelledby="dropdown2-tab">
+
+                                <!--INFOFUNCIONVITAL-->
+                                <div role="tabpanel" class="tab-pane fade" id="tab4" aria-labelledby="dropdown1-tab">
                                   <div class="row">
                                     <div class="col-lg-10">
                                       <div class="card">
-                                        <form id="InfExaMedico">
-                                          <!--DESCIRPCIONEXAMENMEDICO-->
+                                        <form id="InfFuncionVital">
+                                          <!--SISTOLE-->
                                           <div class="form-group">
-                                            <label class="control-label">Descripción</label>
-                                              <textarea class="form-control"  rows="4" placeholder="Ingresar nota" disabled></textarea>
-                                          </div> 
+                                            <label class="control-label">Sistole</label>
+                                            <input class="form-control" type="text" placeholder="" disabled>
+                                          </div>
+                                          <!--DiASTOLE-->
+                                          <div class="form-group">
+                                            <label class="control-label">Diastole</label>
+                                            <input class="form-control" type="text" placeholder="" disabled>
+                                          </div>
+                                          <!--PULSACIÓN-->
+                                          <div class="form-group">
+                                            <label class="control-label">Pulsación</label>
+                                            <input class="form-control" type="text" placeholder="" disabled>
+                                          </div>
+                                          <!--RITMORESPIRATORIO-->
+                                          <div class="form-group">
+                                            <label class="control-label">Ritmo Respiratorio</label>
+                                            <input class="form-control" type="text" placeholder="" disabled>
+                                          </div>
+                                          <!--TEMPERATURA-->
+                                          <div class="form-group">
+                                            <label class="control-label">Temperatura</label>
+                                            <input class="form-control" type="text" placeholder="" disabled>
+                                          </div>
+                                          <!--ALTURA-->
+                                          <div class="form-group">
+                                            <label class="control-label">Atura</label>
+                                            <input class="form-control" type="text" placeholder="" disabled>
+                                          </div>
+                                          <!--PESO-->
+                                          <div class="form-group">
+                                            <label class="control-label">Peso</label>
+                                            <input class="form-control" type="text" placeholder="" disabled>
+                                          </div>
+                                          <!--IMC-->
+                                          <div class="form-group">
+                                            <label class="control-label">IMC</label>
+                                            <input class="form-control" type="text" placeholder="" disabled>
+                                          </div>
                                           <!--FECHAREGISTRO-->
                                           <div class="form-group">
-                                            <label class="control-label">Fecha de Resgistro</label>
+                                            <label class="control-label">Fecha de Registro</label>
+                                                <div class="row">
+                                                    <div class="col-md-10">
+                                                      <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input" disabled>
+                                                    </div>
+                                                    <div class="col-md-2" style="text-align: right;">
+                                                        <a class="btn btn-success icon-btn" href="create.html">
+                                                        <i class="fa fa-fw fa-lg fa-search">
+                                                        </i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                          </div>                                   
+                                                                                     
+                                        </form> 
+                                      </div>    
+                                    </div>  
+                                  </div>
+                                </div>
+
+                                <!--INFOEVOLUCION-->                              
+                                <div role="tabpanel" class="tab-pane fade" id="tab5" aria-labelledby="dropdown1-tab">
+                                  <div class="row">
+                                    <div class="col-lg-10">
+                                      <div class="card">
+                                        <form id="InfEvolucion">
+                                          <!--DESCRIPCCION-->
+                                          <div class="form-group">
+                                            <label class="control-label">Descripción</label>
+                                            <input class="form-control" type="text" placeholder="" disabled>
+
+
+                                          </div>
+                                          <div class="form-group" style="">
+                                            <label class="control-label col-lg-12">Estado</label>
+                                            <div class="row">
+                                              <div class="col-md-10">
+                                                <div class="animated-radio-button">
+                                                  <!--PESIMO-->
+                                                  <label>
+                                                        <input id="optionsRadios1" type="radio" name="optionsRadios" value="option1"><span class="label-text">Pésimo</span>
+                                                  </label>
+                                                  <label for="" style="width: 30px;"></label>
+                                                  <!--MALO-->
+                                                  <label>
+                                                      <input id="optionsRadios1" type="radio" name="optionsRadios" value="option2" ><span class="label-text">Malo</span>
+                                                  </label>
+                                                  <label for="" style="width: 30px;"></label>
+                                                  <!--REGULAR-->
+                                                  <label>
+                                                      <input id="optionsRadios1" type="radio" name="optionsRadios" value="option2" ><span class="label-text">Regular</span>
+                                                  </label>
+                                                  <label for="" style="width: 30px;"></label>
+                                                  <!--BUENO-->
+                                                  <label>
+                                                      <input id="optionsRadios1" type="radio" name="optionsRadios" value="option2" checked="checked" ><span class="label-text">Bueno</span>
+                                                  </label>
+                                                  <label for="" style="width: 30px;"></label>
+                                                  <!--EXCELENTE-->
+                                                  <label>
+                                                      <input id="optionsRadios1" type="radio" name="optionsRadios" value="option2" ><span class="label-text">Excelente</span>
+                                                  </label>                                        
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <!--FECHAREGISTRO-->
+                                          <div class="form-group">
+                                            <label class="control-label">Fecha de Registro</label>
                                                 <div class="row">
                                                     <div class="col-md-10">
                                                       <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input" disabled>
@@ -398,36 +508,112 @@
                                   </div>
                                 </div>
                                 <div role="tabpanel" class="tab-pane fade" id="samsa" aria-labelledby="samsa-tab">
-                                  <p>
-                                    One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.
-                                  </p>
-                                  <p>
-                                    He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.
-                                  </p>
-                                  <p>
-                                    The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?
-                                  </p>
-                                  <p>
-                                    " he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls.
-                                  </p>
-                                  <p>
-                                    A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.
-                                  </p>
-                                  <p>
-                                    It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather.
-                                  </p>
-                                  <p>
-                                    Drops of rain could be heard hitting the pane, which made him feel quite sad.
-                                  </p>
-                                  <p>
-                                    "How about if I sleep a little bit longer and forget all this nonsense", he thought, but that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn't get into that position. However hard he threw
-                                    himself onto his right, he always rolled back to where he was.
-                                  </p>
-                                  <p>
-                                    He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs, and only stopped when he began to feel a mild, dull pain there that he had never felt before. "Oh, God", he thought, "what a strenuous career
-                                    it is that I've chosen!
-                                  </p>
                                 </div>
+                                
+                                <!--INFOANAMMESIS-->
+                                <div role="tabpanel" class="tab-pane fade" id="tab6" aria-labelledby="dropdown1-tab">
+                                  <div class="row">
+                                    <div class="col-lg-10">
+                                      <div class="card">
+                                        <form id="InfAnammesis">
+                                          <!--DESCIRPCIONEXAMENMEDICO-->
+                                          <div class="form-group">
+                                            <label class="control-label">Descripción</label>
+                                              <textarea class="form-control"  rows="4" placeholder="Ingresar nota" disabled></textarea>
+                                          </div> 
+                                          <!--FECHAREGISTRO-->
+                                          <div class="form-group">
+                                            <label class="control-label">Fecha de Registro</label>
+                                                <div class="row">
+                                                    <div class="col-md-10">
+                                                      <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input" disabled>
+                                                    </div>
+                                                    <div class="col-md-2" style="text-align: right;">
+                                                        <a class="btn btn-success icon-btn" href="create.html">
+                                                        <i class="fa fa-fw fa-lg fa-search">
+                                                        </i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                          </div>                                   
+                                                                                     
+                                        </form> 
+                                      </div>    
+                                    </div>  
+                                  </div>
+                                </div>
+
+
+                                <!--INFOARCHIVOCOMPL1-->
+                                <div role="tabpanel" class="tab-pane fade" id="dropdown1" aria-labelledby="dropdown1-tab">
+                                  <div class="row">
+                                    <div class="col-lg-10">
+                                      <div class="card">
+                                        <form id="InfEstCom1">
+                                          <!--DESCIRPCIONEXAMENMEDICO-->
+                                          <div class="form-group">
+                                            <label class="control-label">Descripción</label>
+                                              <textarea class="form-control"  rows="4" placeholder="Ingresar nota" disabled></textarea>
+                                          </div> 
+                                          <!--FECHAREGISTRO-->
+                                          <div class="form-group">
+                                            <label class="control-label">Fecha de Registro</label>
+                                                <div class="row">
+                                                    <div class="col-md-10">
+                                                      <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input" disabled>
+                                                    </div>
+                                                    <div class="col-md-2" style="text-align: right;">
+                                                        <a class="btn btn-success icon-btn" href="create.html">
+                                                        <i class="fa fa-fw fa-lg fa-search">
+                                                        </i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                          </div>                                   
+                                                                                     
+                                        </form> 
+                                      </div>    
+                                    </div>  
+                                  </div>
+                                </div>
+                                <!--INFOARCHIVOCOMPL2-->
+                                <div role="tabpanel" class="tab-pane fade" id="dropdown2" aria-labelledby="dropdown2-tab">
+                                  <div class="row">
+                                    <div class="col-lg-10">
+                                      <div class="card">
+                                        <form id="InfEstCom2">
+                                          <!--DESCIRPCIONEXAMENMEDICO-->
+                                          <div class="form-group">
+                                            <label class="control-label">Descripción</label>
+                                              <textarea class="form-control"  rows="4" placeholder="Ingresar nota" disabled></textarea>
+                                          </div> 
+                                          <!--PATHARCHIVO-->
+                                          <div class="form-group">
+                                            <label class="control-label">PATH</label>
+                                              <textarea class="form-control"  rows="4" placeholder="Ingresar nota" disabled></textarea>
+                                          </div> 
+                                          <!--FECHAREGISTRO-->
+                                          <div class="form-group">
+                                            <label class="control-label">Fecha de Registro</label>
+                                                <div class="row">
+                                                    <div class="col-md-10">
+                                                      <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input" disabled>
+                                                    </div>
+                                                    <div class="col-md-2" style="text-align: right;">
+                                                        <a class="btn btn-success icon-btn" href="create.html">
+                                                        <i class="fa fa-fw fa-lg fa-search">
+                                                        </i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                          </div>                                   
+                                                                                     
+                                        </form> 
+                                      </div>    
+                                    </div>  
+                                  </div>
+                                </div>
+
                               </div>
                             </div>
                           </div>
@@ -460,6 +646,15 @@
         <!--*************************FIN AQUÍ VA EL CÓDIGO****************************-->
       </div>
     </div>
+
+
+
+
+
+
+
+
+
 
 
     <!-- Javascripts-->
