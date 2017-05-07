@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <title>Clinica MagicDent</title>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+    <!--if lt IE 9
+    script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+    script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    -->
+    <style>
+      .borde1{border: 1px #000 solid; text-align: center}            
+      .borde{border: 1px #000fff solid;}
+      .borde2{border: 1px #295ba7 solid; text-align: center}
+      .action{  float: right;}
+    </style>
+  </head>
+  <body class="sidebar-mini fixed">
+    <div class="wrapper">
+      <!-- Navbar-->
+      <header class="main-header hidden-print"><a class="logo" href="../layout.html">CMD</a>
+        <nav class="navbar navbar-static-top">
+          <!-- Sidebar toggle button--><a class="sidebar-toggle" href="#" data-toggle="offcanvas"></a>
+           <div class="navbar-custom-menu">
+            <ul class="top-nav">
+              <!--Notification Menu-->
+             <li class="dropdown notification-menu"><a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-bell-o fa-lg"></i></a>
+                <ul class="dropdown-menu">
+                  <li class="not-head">Tienes 4 nuevas notificaciones</li>
+                  <li><a class="media" href="javascript:;"><span class="media-left media-icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-primary"></i><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span></span>
+                      <div class="media-body"><span class="block">Mariel te ha enviado un mensaje</span><span class="text-muted block">Hace 2 minutos</span></div></a></li>
+                  <li><a class="media" href="javascript:;"><span class="media-left media-icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-danger"></i><i class="fa fa-hdd-o fa-stack-1x fa-inverse"></i></span></span>
+                      <div class="media-body"><span class="block">El servidor no esta activo</span><span class="text-muted block">Hace 2 minutos</span></div></a></li>
+                  <li><a class="media" href="javascript:;"><span class="media-left media-icon"><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x text-success"></i><i class="fa fa-money fa-stack-1x fa-inverse"></i></span></span>
+                      <div class="media-body"><span class="block">Transacción abc terminada</span><span class="text-muted block">Hace 2 minutos</span></div></a></li>
+                  <li class="not-footer"><a href="#">Mirar todas las notificaciones</a></li>
+                </ul>
+              </li>
+              <!-- User Menu-->
+              <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user fa-lg"></i></a>
+                <ul class="dropdown-menu settings-menu">
+                  <li><a href="#"><i class="fa fa-cog fa-lg"></i> Opciones</a></li>
+                  <li><a href="#"><i class="fa fa-user fa-lg"></i> Perfil</a></li>
+                  <li><a href="#"><i class="fa fa-sign-out fa-lg"></i> Salir</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Side-Nav-->
+      <aside class="main-sidebar hidden-print">
+        <section class="sidebar">
+             <div class="user-panel">
+            <div class="pull-left image"><img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/48.jpg" alt="User Image"></div>
+            <div class="pull-left info">
+              <p>JuanJ</p>
+              <p class="designation">Juan Jose</p>
+            </div>
+          </div>
+          <!-- Sidebar Menu-->
+         <ul class="sidebar-menu">
+            <li class="treeview"><a href="../layout.html"><i class="fa fa-dashboard"></i><span>Inicio</span></a></li>
+
+           <li class="treeview"><a href="#"><i class="fa fa-users"></i><span> Mant. Usuario</span><i class="fa fa-angle-right"></i></a>
+              <ul class="treeview-menu">
+                <li><a href="../Usuario/index.html"><i class="fa fa-user"></i>Usuario</a></li>
+                <li><a href="../Perfiles/index.html"><i class="fa fa-user"></i>Perfiles</a></li>
+                <li><a href="../Rol/index.html"><i class="fa fa-user"></i>Roles</a></li>
+              
+               
+              </ul>
+            </li>
+            <li class="treeview"><a href="#"><i class="fa fa-user"></i><span>Mant. Paciente</span><i class="fa fa-angle-right"></i></a>
+              <ul class="treeview-menu">
+                <li><a href="../Paciente/index.html"><i class="fa fa-user"></i>Paciente</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i>Historial</a></li>
+               
+              </ul>
+            </li>
+           
+            <li class="treeview"><a href="#"><i class="fa fa-edit"></i><span>Citas</span><i class="fa fa-angle-right"></i></a>
+              <ul class="treeview-menu">
+                <li><a href="#"><i class="fa fa-circle-o"></i>Registrar Cita</a></li>
+              </ul>
+            </li>
+            <li class="treeview"><a href="#"><i class="fa fa-user"></i><span>Empleado</span><i class="fa fa-angle-right"></i></a>
+              <ul class="treeview-menu">
+                <li><a href="#"><i class="fa fa-circle-o"></i>Registrar Empleado</a></li>
+                <li><a href="#"><i class="fa fa-circle-o"></i>Registrar Asistencia</a></li>
+              </ul>
+            </li>
+            <li class="treeview"><a href="#"><i class="fa fa-file-text"></i><span>Servicios</span><i class="fa fa-angle-right"></i></a>
+              <ul class="treeview-menu">
+                <li><a href="#"><i class="fa fa-circle-o"></i> Registrar Servicio</a></li>
+                
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </aside>
+
+
+
+
+
+      <div class="content-wrapper">
+      <!-- EDITAR DESDE AQUÍ -->
+        
+        <!-- **********TITLE********** -->
+        <div class="page-title">
+          <div>
+            <h1><i class="fa fa-check"></i> Registro de Comprobante</h1>
+            <p>Comprobante ...!</p>
+          </div>
+          <div>
+            <ul class="breadcrumb">
+              <li><i class="fa fa-home fa-lg"></i></li>
+              <li><a href="index.html">Lista Comrobante</a></li>
+              <li>Registrar Comprobante</li>
+            </ul>
+          </div>
+        </div>
+
+        <!--*****************REGISTRO DE PACIENTE*******************-->
+        <div class="row">
+
+          <div class="col-md-6">
+            <div class="card">
+              <!-- **********PARTE 1******** -->
+              <!--h3 class="card-title">*</h3-->
+              <div class="card-body">
+                <form>
+                   <!--SERIE-->
+                   <div class="form-group">
+                      <label class="control-label">Serie</label>
+                      <input class="form-control" type="text" placeholder="123-456">
+                    </div>
+                    <!--NUMERO-1-->
+                    <div class="form-group">
+                    <label class="control-label">Numero </label>
+                    <input class="form-control" type="text" placeholder="COM_0003">
+                    </div>
+                    <!--FECHAYHORA-->
+                    <div class="form-group">
+                        <label class="control-label">Fecha y hora de Registro</label>
+                        <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input" disabled>
+                    </div>
+                    <!--FECHAYHORA-->
+                    <div class="form-group">
+                        <label class="control-label">Fecha y hora de Emisión</label>
+                        <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                    </div>
+                     <!--FECHAYHORA-->
+                    <div class="form-group">
+                        <label class="control-label">Fecha de Vencimiento</label>
+                        <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                     </div>
+                                     
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!--*************RECORD-2*************-->
+          <div class="col-md-6">
+            <div class="card">
+              <!--h3 class="card-title">*</h3-->
+              <div class="card-body">
+                <form class="form-horizontal">
+                    <!--FECHAYHORA-->
+                    <div class="form-group">
+                        <label class="control-label col-md-3">Fecha de Cancelación</label>
+                        <div class="col-md-8">
+                             <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="example-datetime-local-input">
+                        </div>
+                    </div>
+                    <!--MONTO-->
+                    <div class="form-group">
+                        <label class="control-label col-md-3">Monto Total</label>
+                        <div class="col-md-8">
+                            <input class="form-control" type="number" placeholder="Ingrese su número">
+                        </div>
+                    </div>
+                    <!--MONTO-->
+                    <div class="form-group">
+                        <label class="control-label col-md-3">Sub Total</label>
+                        <div class="col-md-8">
+                            <input class="form-control" type="number" placeholder="Ingrese su número">
+                        </div>
+                    </div>
+                    <!--MONTO-->
+                    <div class="form-group">
+                        <label class="control-label col-md-3">Monto Impuesto</label>
+                        <div class="col-md-8">
+                            <input class="form-control" type="number" placeholder="Ingrese su número">
+                        </div>
+                    </div>
+                    <!--MONTO-->
+                    <div class="form-group">
+                        <label class="control-label col-md-3">Monto Descuento</label>
+                        <div class="col-md-8">
+                            <input class="form-control" type="number" placeholder="Ingrese su número">
+                        </div>
+                    </div>
+                    <!--ADDRESS-->
+                    <div class="form-group">
+                        <label class="control-label col-md-3">Observación</label>
+                        <div class="col-md-8">
+                        <textarea class="form-control"  rows="4" placeholder="Enter your address"></textarea>
+                        </div>
+                    </div>
+                    <hr>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <!-- **********RECORD-3********** -->
+          <!-- **********ENDRECORD-3********** -->
+
+
+
+          <!-- **********STARTCONFIRMATION********** -->
+          <div class="col-md-12" style="text-align: center;">
+            <div class="card">  
+              <div class="card-body">
+                <form class="form-inline">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <button class="btn btn-primary icon-btn" type="button">
+                          <i class="fa fa-fw fa-lg fa-check-circle">
+                          </i>Registrar</button>&nbsp;&nbsp;&nbsp;
+                          <a class="btn btn-default icon-btn" href="#">
+                          <i class="fa fa-fw fa-lg fa-times-circle"></i>Cancelar</a>
+                        </div>
+                      </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- **********ENDCONFIRMATION********** -->
+          <!--*************ADDITIONAL***********-->
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="well bs-component">
+                            <form class="form-horizontal has-success">
+                              <fieldset>
+                                <legend>*Otros</legend>
+                                <!--EMAIL2-->
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label" for="inputEmail">Email 2</label>
+                                  <div class="col-lg-10">
+                                    <input class="form-control" id="inputEmail" type="text" placeholder="Email">
+                                  </div>
+                                </div>
+                                <!--NUMBERPHONE-->
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label" for="inputEmail">N° Telefónico / Celular</label>
+                                  <div class="col-lg-10">
+                                    <input class="form-control" type="email" placeholder="número">
+                                  </div>
+                                </div>
+                                <!--ADDRESS2-->
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label" for="textArea">Dirección 2</label>
+                                  <div class="col-lg-10">
+                                    <textarea class="form-control" id="textArea" rows="3"></textarea>
+                                  </div>
+                                </div>
+                                <!--TRACK-->
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label" for="select">Vía</label>
+                                  <div class="col-lg-10">
+                                    <select class="form-control" id="select">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <!--NAMETRACK-->
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label">Nombre Vía</label>
+                                  <div class="col-lg-10">
+                                      <input class="form-control" type="text" placeholder="Ingresar nombre de vía">
+                                  </div>
+                                </div>
+                              </fieldset>
+                            </form>
+                          </div>
+                        </div>
+                        <!--*****2*****-->
+                        <div class="col-lg-6">
+                          <form class="form-horizontal has-success">
+                            <legend>*Otros</legend>
+                                <!--TRACK-->
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label" for="select">Vía</label>
+                                  <div class="col-lg-10">
+                                    <select class="form-control" id="select">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <!--NAMETRACK-->
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label">Nombre Vía</label>
+                                  <div class="col-lg-10">
+                                      <input class="form-control" type="text" placeholder="Ingresar nombre de vía">
+                                  </div>
+                                </div>
+                                <!--ZONE-->
+                                <div class="form-group">
+                                  <label class="col-lg-2 control-label" for="select">Zona</label>
+                                  <div class="col-lg-10">
+                                    <select class="form-control" id="select">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <!--NAMEZONE-->
+                                <div class="form-group">
+                                  <label class="control-label col-lg-2">Nombre Zona</label>
+                                    <div class="col-lg-10">
+                                      <input class="form-control" type="text" placeholder="Ingresar nombre de zona">
+                                    </div>
+                                </div>
+                                <!--DIE-->
+                                <div class="form-group">
+                                      <label class="control-label col-lg-2 ">Defunsión</label>
+                                      <div class="col-lg-10">
+                                        <div class="animated-radio-button">
+                                          <label>
+                                                <input id="optionsRadios1" type="radio" name="optionsRadios" value="option1"><span class="label-text">Si</span>
+                                          </label>
+                                          <label for="" style="width: 30px;"></label>
+                                          <label>
+                                              <input id="optionsRadios1" type="radio" name="optionsRadios" value="option2" checked=""><span class="label-text">No</span>
+                                          </label>
+                                        </div>
+                                      </div>
+                                    </div>
+                                <!--DIEDATE-->
+                                <div class="form-group">
+                                  <label class="control-label col-lg-2 ">Fecha de Defunción</label>
+                                  <div class="col-lg-8">
+                                      <input class="form-control" type="date" value="2017-01-01" id="example-date-input">
+                                  </div>
+                                </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- **********STARTCONFIRMATION********** -->
+                  <div class="col-md-12" style="text-align: center;">
+                    <div class="card">  
+                      <div class="card-body">
+                        <form class="form-inline">
+                              <div class="row">
+                                <div class="col-md-12">
+                                  <button class="btn btn-primary icon-btn" type="button">
+                                  <i class="fa fa-fw fa-lg fa-check-circle">
+                                  </i>Registrar</button>&nbsp;&nbsp;&nbsp;
+                                  <a class="btn btn-default icon-btn" href="#">
+                                  <i class="fa fa-fw fa-lg fa-times-circle"></i>Cancelar</a>
+                                </div>
+                              </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                 <!-- **********ENDCONFIRMATION********** -->
+              </div>
+
+
+
+
+
+        <!-- **********END OF EDITION*********** -->
+        </div>
+
+
+
+
+      </div>
+
+
+    </div>
+    <!-- Javascripts-->
+    <script src="../../js/jquery-2.1.4.min.js"></script>
+    <script src="../../js/essential-plugins.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/plugins/pace.min.js"></script>
+    <script src="../../js/main.js"></script>
+  </body>
+</html>
