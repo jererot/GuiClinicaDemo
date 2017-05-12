@@ -102,14 +102,14 @@
       <div class="col-lg-12">
         <div class="page-title">
           <div>
-            <h1><i class="fa fa-edit"></i>Permisos</h1>
-            <p>Permisos</p>
+            <h1><i class="fa fa-edit"></i>Turnos</h1>
+            <p>Turnos..!</p>
           </div>
           <div>
             <ul class="breadcrumb">
               <li><i class="fa fa-home fa-lg"></i></li>
-              <li><a href="#">Lista de Perfil</a></li>
-              <li>Permisos</li>
+              <li><a href="#">Lista de horario</a></li>
+              <li>Turnos</li>
             </ul>
           </div>
         </div>
@@ -124,10 +124,13 @@
                <thead>
                  <tr>
                    <th>
-                     Rol
+                     Turno
                    </th>
                    <th>
-                     Acciones
+                     Lunes
+                   </th>
+                   <th>
+                     01/05/2017
                    </th>
                    
                  </tr>
@@ -135,46 +138,43 @@
                  <tbody>
                    <tr>
                      <td>
-                       Mant. Citas
+                     <label>Descripción</label>
+
                      </td>
-                     <td>
-                       <a href="">
-                         <span class="label label-success">Activo
-                           
-                         </span>
-                       </a>
-                     </td>
+                     <td>Se origino un problema y se tuvieron que quedar horas extras</td>
                    </tr>
-                   <tr>
-                     <td>
-                       Mant.Paciente
-                     </td>
-                     <td>
-                       <a href="">
-                         <span class="label label-success">Activo
-                           
-                         </span>
-                       </a>
-                     </td>
-                   </tr>
-                   <tr>
-                     <td>
-                       Mant. Usuario
-                     </td>
-                     <td>
-                       <a href="">
-                         <span class="label label-danger">No Activo
-                           
-                         </span>
-                       </a>
-                     </td>
-                   </tr>
+                   
                  </tbody>
                </table>
               </div>
               
             </div>
           </div>
+          <div class="card-body col-md-12 table-responsive" >
+                              <table class="table table-hover table-bordered " id="sampleTable">
+                                <thead style="color:#ffffff;background:#0094ff;">
+                                  <tr>
+                                  <th>Nº</th>
+                                    <th>Empleado</th>
+                                    <th>Hora Ingreso</th>
+                                    <th>Hora Fin</th>
+                                    <th>Especificaciones</th>
+                                    
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Juan Pedro</td>
+                                    <td>8:00 a.m</td>
+                                    <td>5:00 p.m</td>
+                                    <td>Enfermero</td>
+                                  </tr>
+                                  
+                                  
+                                </tbody>
+                              </table>
+                    </div>
            
       <div class="col-md-12" style="text-align: center;">
                     <div class="card">  
@@ -208,6 +208,38 @@
     <!--TABLESCRIPT-->
     <script type="text/javascript" src="../../js/plugins/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="../../js/plugins/dataTables.bootstrap.min.js"></script>
+    <script type="text/javascript">
+    //$('#sampleTable').DataTable();
+
+                $(document).ready(function () 
+            {
+                $('#sampleTable').dataTable({
+
+                    language: {
+                        processing: "En curso...",
+                        search: "Buscar:",
+                        lengthMenu: "Visualizar _MENU_ registros",
+                        info: "_START_ de _END_ registros de un total de _TOTAL_ registros",
+                        infoEmpty: "0 registros encontrados",
+                        infoFiltered: "(_MAX_ registros filtrados en total)",
+                        infoPostFix: "",
+                        loadingRecords: "Cargando registros...",
+                        zeroRecords: "No hay registros",
+                        emptyTable: "Vacío",
+                        paginate: {
+                            first: "Primero",
+                            previous: "Previo  ",
+                            next: "  Siguiente",
+                            last: "Último"
+                        },
+                        aria: {
+                            sortAscending: ": Habilitado para ordenar la columna en orden ascendente",
+                            sortDescending: ": Habilitado para ordenar la columna en orden descendente"                }
+                    }
+                });
+
+            });
+    </script>
     
   </body>
 </html>
